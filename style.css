@@ -141,16 +141,13 @@ header ul a:hover{
     mix-blend-mode: lighten;
   }
   
-.blackhole-box video{
-    width: 100%;
-    margin-top: -23.5%;
-}
+
 
 .hero{
     position: relative;
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     align-items: center;
     justify-content: space-between;
 }
@@ -175,7 +172,7 @@ header ul a:hover{
     max-width: 600px;
     font-weight: 700;
     line-height: 70px;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 30px;
 }
 
@@ -923,11 +920,10 @@ header ul a:hover{
 
 
 @media screen and (max-width: 1200px){
-    .blackhole-box video{
-        margin-top: -20%;
-    }
+   
 
     .hero-info h1{
+        
         font-size: 40px;
         max-width: 400px;
         line-height: 40px;
@@ -996,10 +992,7 @@ header ul a:hover{
         display: inline;
     }
 
-    .blackhole-box video {
-        width: 100%;
-        margin-top: -15%;
-    }
+   
 
     .autoBlur{
         animation: none;
