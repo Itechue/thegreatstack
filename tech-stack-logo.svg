@@ -1,0 +1,43 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Base layer -->
+  <path d="M 100 150 L 160 130 L 160 110 L 100 130 L 40 110 L 40 130 Z" 
+        fill="#4A90E2" opacity="0.8"/>
+  
+  <!-- Middle layer -->
+  <path d="M 100 120 L 160 100 L 160 80 L 100 100 L 40 80 L 40 100 Z" 
+        fill="#5BA3F5" opacity="0.85"/>
+  
+  <!-- Top layer -->
+  <path d="M 100 90 L 160 70 L 160 50 L 100 70 L 40 50 L 40 70 Z" 
+        fill="#87CEEB" opacity="0.9"/>
+  
+  <!-- Connecting edges to create 3D effect -->
+  <path d="M 100 130 L 100 100 L 160 80 L 160 110 Z" 
+        fill="#3A7BC8" opacity="0.3"/>
+  <path d="M 100 130 L 100 100 L 40 80 L 40 110 Z" 
+        fill="#2A6BB8" opacity="0.3"/>
+  
+  <path d="M 100 100 L 100 70 L 160 50 L 160 80 Z" 
+        fill="#4A8FD8" opacity="0.3"/>
+  <path d="M 100 100 L 100 70 L 40 50 L 40 80 Z" 
+        fill="#3A7FC8" opacity="0.3"/>
+  
+  <!-- Top connecting lines -->
+  <path d="M 100 70 L 100 40 L 160 20 L 160 50 Z" 
+        fill="#6BB0FF" opacity="0.3"/>
+  <path d="M 100 70 L 100 40 L 40 20 L 40 50 Z" 
+        fill="#5BA0EF" opacity="0.3"/>
+  
+  <!-- Peak -->
+  <path d="M 100 40 L 160 20 L 100 10 L 40 20 Z" 
+        fill="#A0D8FF" opacity="0.95"/>
+  
+  <!-- Accent lines for tech feel -->
+  <line x1="100" y1="10" x2="100" y2="150" 
+        stroke="#FFFFFF" stroke-width="1" opacity="0.3"/>
+  <circle cx="100" cy="10" r="3" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="100" cy="40" r="2.5" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="100" cy="70" r="2.5" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="100" cy="100" r="2.5" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="100" cy="130" r="2.5" fill="#FFFFFF" opacity="0.6"/>
+</svg>
