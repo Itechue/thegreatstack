@@ -323,9 +323,10 @@ header ul a:hover{
 
 .card p{
     position: absolute;
-    bottom: 3%;
-    left: 5%;
+    bottom: 6%;
+    
     z-index: 1;
+    font-family:monospace;
     max-width: 300px;
     color: gray;
     font-size: 13px;
@@ -334,7 +335,7 @@ header ul a:hover{
 
 .card img{
     width: 80%;
-    height: 50%;
+    height: 40%;
     object-fit: cover;
 }
 
@@ -349,7 +350,8 @@ header ul a:hover{
 .card button{
     position: absolute;
     bottom: 5%;
-    left: 5%;
+    display: flex;
+    align-self: center;
     padding: 10px 25px;
     border: 1px solid gray;
     background-color: #0f1217;
@@ -385,6 +387,8 @@ header ul a:hover{
 .card:nth-child(4){
     grid-column: span 2;
 }
+
+
 
 .card:nth-child(4) p{
     max-width: 650px;
@@ -654,7 +658,7 @@ header ul a:hover{
   /* CONTACT SECTION */
 .contact-section{
     width: 80%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     gap: 10%;
@@ -670,7 +674,7 @@ header ul a:hover{
 
 .social-box {
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     gap: 25px;
 }
 
@@ -1086,9 +1090,9 @@ header ul a:hover{
         gap: 30px;
     }
     
-    .project-vidbox{
+    /* .project-vidbox{
         min-width: 200px;
-    }
+    } */
 
     .project-info{
         width: 85%;
@@ -1127,8 +1131,8 @@ header ul a:hover{
 
     .contact-section{
         flex-direction: column;
-        margin-top: 100px;
-        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-bottom: 10px;
     }
 
     .footer{
@@ -1230,7 +1234,7 @@ header ul a:hover{
     }
 
     .contact-section .section-title {
-        top: -30px;
+        top: 30px;
         left: 25%;
     }
 
