@@ -1399,31 +1399,48 @@ blockquote {
     margin: 0;
 }
 
-/* 🖨️ High-End Professional Print Styleshelf */
+/* 🖨️ High-End Professional Print Isolation (Fixes 11-page bug) */
 @media print {
 
-    /* Hide everything web-related */
-    body * {
-        visibility: hidden !important;
+    /* Total Isolation: Kill everything top-level except the CV */
+    .site-header,
+    main,
+    .site-footer,
+    #mobile-nav,
+    .btn-cv-sticky {
+        display: none !important;
     }
 
-    #cv-modal,
-    #cv-modal * {
-        visibility: visible !important;
+    /* Force Body/HTML to behave */
+    html,
+    body {
+        background: #ffffff !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: visible !important;
     }
 
     #cv-modal {
-        position: absolute !important;
-        left: 0 !important;
-        top: 0 !important;
-        width: 100% !important;
-        height: auto !important;
+        position: static !important;
+        /* Removes ghost absolute height */
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
         background: #ffffff !important;
         padding: 0 !important;
         margin: 0 !important;
-        display: block !important;
         box-shadow: none !important;
         overflow: visible !important;
+        z-index: auto !important;
+    }
+
+    .modal-overlay {
+        position: static !important;
+        display: block !important;
+        background: #ffffff !important;
+        backdrop-filter: none !important;
+        padding: 0 !important;
     }
 
     .modal-container {
@@ -1434,6 +1451,8 @@ blockquote {
         transform: none !important;
         border: none !important;
         background: #ffffff !important;
+        margin: 0 !important;
+        position: static !important;
     }
 
     .modal-header {
@@ -1445,6 +1464,7 @@ blockquote {
         background: #ffffff !important;
         color: #000000 !important;
         font-family: 'Inter', Arial, sans-serif !important;
+        overflow: visible !important;
     }
 
     .cv-header {
@@ -1456,6 +1476,7 @@ blockquote {
         font-size: 32pt !important;
         color: #000 !important;
         font-weight: 800 !important;
+        line-height: 1.1 !important;
     }
 
     .cv-title {
@@ -1469,6 +1490,7 @@ blockquote {
         border-bottom: 1.5pt solid #eee !important;
         padding-bottom: 4pt !important;
         font-weight: 700 !important;
+        margin-top: 2rem !important;
     }
 
     .cv-item h3 {
@@ -1482,16 +1504,15 @@ blockquote {
         color: #000 !important;
     }
 
-    /* Print columns */
     .cv-grid {
+        display: grid !important;
         grid-template-columns: 1fr 1fr !important;
         gap: 2rem !important;
     }
 
-    /* Avoid page breaks inside items */
     .cv-section,
     .cv-item {
-        page-break-inside: avoid;
+        page-break-inside: avoid !important;
     }
 }
 
