@@ -1119,13 +1119,16 @@ blockquote {
 
     /* Nav */
     .site-header {
-        background: var(--bg);
-        border-bottom: 1px solid var(--line);
+        background: var(--bg) !important;
+        border-bottom: 1px solid var(--line) !important;
         height: auto;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
     }
 
     .nav-container {
         height: 64px;
+        background: var(--bg);
     }
 
     .nav-links {
@@ -1133,14 +1136,16 @@ blockquote {
     }
 
     .mobile-menu-btn {
-        display: flex;
-        color: var(--ink-1);
+        display: flex !important;
+        color: var(--ink-1) !important;
+        opacity: 1 !important;
+        visibility: visible !important;
         z-index: 210;
     }
 
     .mobile-menu-btn .icon {
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 22px;
     }
 
     .mobile-nav {
@@ -1193,17 +1198,19 @@ blockquote {
         gap: .2rem;
     }
 
-    /* Expertise & Reveal Fix */
+    /* Expertise & Reveal Fix — Force visibility on mobile */
     .expertise-grid {
         grid-template-columns: 1fr;
         border-radius: var(--r-md);
         gap: 1px;
     }
 
-    .reveal {
+    .reveal,
+    .fade-up {
         opacity: 1 !important;
         transform: none !important;
         visibility: visible !important;
+        transition: none !important;
     }
 
     /* Philosophy pills */
@@ -1392,23 +1399,99 @@ blockquote {
     margin: 0;
 }
 
-/* Print Overrides */
+/* 🖨️ High-End Professional Print Styleshelf */
 @media print {
+
+    /* Hide everything web-related */
     body * {
-        visibility: hidden;
+        visibility: hidden !important;
     }
 
-    #cv-content,
-    #cv-content * {
-        visibility: visible;
+    #cv-modal,
+    #cv-modal * {
+        visibility: visible !important;
     }
 
-    #cv-content {
+    #cv-modal {
         position: absolute !important;
         left: 0 !important;
         top: 0 !important;
         width: 100% !important;
+        height: auto !important;
+        background: #ffffff !important;
         padding: 0 !important;
+        margin: 0 !important;
+        display: block !important;
+        box-shadow: none !important;
+        overflow: visible !important;
+    }
+
+    .modal-container {
+        width: 100% !important;
+        max-width: none !important;
+        max-height: none !important;
+        box-shadow: none !important;
+        transform: none !important;
+        border: none !important;
+        background: #ffffff !important;
+    }
+
+    .modal-header {
+        display: none !important;
+    }
+
+    .cv-document {
+        padding: 0 !important;
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-family: 'Inter', Arial, sans-serif !important;
+    }
+
+    .cv-header {
+        border-bottom: 3px solid #000 !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .cv-id h1 {
+        font-size: 32pt !important;
+        color: #000 !important;
+        font-weight: 800 !important;
+    }
+
+    .cv-title {
+        font-size: 14pt !important;
+        color: #333 !important;
+    }
+
+    .cv-section-title {
+        font-size: 13pt !important;
+        color: #000 !important;
+        border-bottom: 1.5pt solid #eee !important;
+        padding-bottom: 4pt !important;
+        font-weight: 700 !important;
+    }
+
+    .cv-item h3 {
+        font-size: 12pt !important;
+        color: #000 !important;
+    }
+
+    .badge {
+        border: 1px solid #ddd !important;
+        background: #f8f8f8 !important;
+        color: #000 !important;
+    }
+
+    /* Print columns */
+    .cv-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 2rem !important;
+    }
+
+    /* Avoid page breaks inside items */
+    .cv-section,
+    .cv-item {
+        page-break-inside: avoid;
     }
 }
 
