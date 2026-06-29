@@ -587,9 +587,81 @@ section {
 
 .about-inner {
     display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    gap: 7rem;
+    grid-template-columns: 260px 1fr auto;
+    gap: 4.5rem;
     align-items: center;
+}
+
+/* ── Profile Photo ── */
+.about-photo {
+    flex-shrink: 0;
+}
+
+.photo-frame {
+    position: relative;
+    width: 260px;
+}
+
+.profile-img {
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: var(--r-xl);
+    display: block;
+    border: 1px solid var(--line-strong);
+    box-shadow: var(--sh-lg);
+    transition: transform var(--t) var(--ease-out), box-shadow var(--t) var(--ease-out);
+}
+
+.photo-frame:hover .profile-img {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: var(--sh-xl);
+}
+
+/* Glowing ring on hover */
+.photo-frame::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: calc(var(--r-xl) + 3px);
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    z-index: -1;
+    opacity: 0;
+    transition: opacity var(--t) var(--ease-out);
+}
+
+.photo-frame:hover::before {
+    opacity: 1;
+}
+
+/* "Available for hire" floating badge */
+.photo-badge {
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    background: var(--bg);
+    border: 1px solid var(--line-strong);
+    border-radius: 100px;
+    padding: .35rem .9rem;
+    font-size: .72rem;
+    font-weight: 700;
+    color: var(--ink-2);
+    white-space: nowrap;
+    box-shadow: var(--sh-sm);
+}
+
+.photo-badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #22c55e;
+    flex-shrink: 0;
+    animation: pulse 2.5s ease-in-out infinite;
 }
 
 .about-text h2 {
@@ -616,6 +688,7 @@ section {
     border: 1px solid var(--line);
     border-radius: var(--r-lg);
     overflow: hidden;
+    min-width: 260px;
 }
 
 .stat-card {
@@ -638,6 +711,7 @@ section {
     color: var(--ink-3);
     letter-spacing: .01em;
 }
+
 
 
 /* ─── Work / Projects ─────────────────────────────────── */
@@ -1090,10 +1164,35 @@ blockquote {
 
 /* ─── Responsive ──────────────────────────────────────── */
 
-@media (max-width: 960px) {
+@media (max-width: 1080px) {
+    .about-inner {
+        grid-template-columns: 220px 1fr;
+        grid-template-rows: auto auto;
+        gap: 3rem;
+    }
+
+    .about-stats {
+        grid-column: 1 / -1;
+        min-width: unset;
+    }
+}
+
+@media (max-width: 760px) {
     .about-inner {
         grid-template-columns: 1fr;
-        gap: 3.5rem;
+        gap: 2.5rem;
+        justify-items: center;
+        text-align: left;
+    }
+
+    .about-photo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-stats {
+        width: 100%;
     }
 }
 
@@ -1157,9 +1256,16 @@ blockquote {
     }
 
     /* Hero */
+    .hero {
+        min-height: auto;
+        padding-top: 110px;
+        padding-bottom: 4rem;
+        align-items: flex-start;
+    }
+
     .hero-container {
-        padding-top: 1rem;
-        padding-bottom: 2rem;
+        padding-top: 0;
+        padding-bottom: 1rem;
     }
 
     .hero-role {
@@ -1378,6 +1484,43 @@ blockquote {
     border-radius: 4px;
     margin-left: 0.5rem;
     vertical-align: middle;
+}
+
+/* Graduation badge — green accent */
+.badge-grad {
+    font-size: 0.7rem;
+    background: rgba(34, 197, 94, .12);
+    color: #16a34a;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    border: 1px solid rgba(34, 197, 94, .25);
+}
+
+[data-theme="dark"] .badge-grad {
+    background: rgba(34, 197, 94, .18);
+    color: #4ade80;
+    border-color: rgba(74, 222, 128, .25);
+}
+
+/* Hero graduation pill */
+.grad-badge {
+    display: inline-block;
+    background: rgba(34, 197, 94, .12);
+    color: #16a34a;
+    border: 1px solid rgba(34, 197, 94, .3);
+    border-radius: 20px;
+    padding: 0.1rem 0.6rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+}
+
+[data-theme="dark"] .grad-badge {
+    background: rgba(34, 197, 94, .18);
+    color: #4ade80;
+    border-color: rgba(74, 222, 128, .3);
 }
 
 .cv-grid {
