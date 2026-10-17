@@ -1,102 +1,120 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Ibrahim Isah Bawa — Graduate Full-Stack Software Engineer &amp; Data Scientist. 9+ live production platforms including healthcare, fitness, gaming, agriculture, education, hospitality, and inventory management. Based in Nigeria, available worldwide."
+      content="Ibrahim Isah Bawa â€” Computer Scientist, Full-Stack Software Engineer &amp; Enterprise Network Engineer. 10+ live platforms (including Sunglow Pharmacy POS, Horizon Hope, TheGreatStack) and mission-critical network deployments (Cisco, MikroTik, Starlink Business, IP CCTV). Based in Nigeria, working worldwide."
     />
     <meta
+      name="keywords"
+      content="Ibrahim Isah Bawa, Computer Scientist, Software Engineer, Network Engineer, Cisco, MikroTik, Starlink Business, CCTV Surveillance, Sunglow Pharmacy, Horizon Hope, Full-Stack, Cybersecurity, Data Science, Nigeria"
+    />
+    <meta name="author" content="Ibrahim Isah Bawa" />
+    <meta
       name="theme-color"
-      content="#ffffff"
+      content="#fcfbf9"
       media="(prefers-color-scheme: light)"
     />
     <meta
       name="theme-color"
-      content="#08080c"
+      content="#0e0f12"
       media="(prefers-color-scheme: dark)"
     />
     <title>
-      Ibrahim Isah Bawa — Full-Stack Engineer &amp; Data Scientist | Graduate
+      Ibrahim Isah Bawa â€” Computer Scientist, Software &amp; Infrastructure
+      Engineer | 10+ Live Platforms
     </title>
     <link rel="icon" type="image/svg+xml" href="tech-stack-logo.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- ░░░ HEADER ░░░ -->
+    <!-- â–‘â–‘â–‘ EDITORIAL DESKTOP HEADER â–‘â–‘â–‘ -->
     <header class="site-header" id="site-header">
-      <div class="container nav-container">
-        <a href="#" class="nav-logo">
-          <img
-            src="tech-stack-logo.svg"
-            alt="TheGreatStack Logo"
-            class="nav-logo-img"
-          />
-          <span class="nav-logo-name">TheGreatStack</span>
+      <div class="nav-container">
+        <!-- LEFT: Personal Brand -->
+        <a href="#home" class="nav-brand" aria-label="Ibrahim Isah Bawa Home">
+          <div class="brand-symbol">
+            <img
+              src="tech-stack-logo.svg"
+              alt="TheGreatStack Logo"
+              class="brand-logo-img"
+            />
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Ibrahim Isah Bawa</span>
+            <span class="brand-role"
+              >Computer Scientist &amp; Systems Engineer</span
+            >
+          </div>
         </a>
 
-        <nav class="nav-links" aria-label="Main navigation">
-          <a href="#work">Work</a>
-          <a href="#expertise">Expertise</a>
-          <a href="#philosophy">Philosophy</a>
-          <a href="#contact">Contact</a>
+        <!-- CENTER: Desktop Navigation -->
+        <nav class="nav-menu" aria-label="Main Navigation">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#expertise" class="nav-link">Expertise</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#contact" class="nav-link">Contact</a>
         </nav>
 
-        <div class="nav-meta">
-          <!-- WhatsApp -->
+        <!-- RIGHT: Status, WhatsApp, Theme Toggle & Primary CTA -->
+        <div class="nav-actions">
+          <div
+            class="status-indicator"
+            title="Available for projects &amp; infrastructure contracts"
+          >
+            <span class="status-dot"></span>
+            <span class="status-text">Available</span>
+          </div>
+
           <a
-            href="https://wa.me/2349012002058?text=Hello%20Ibrahim%2C%20I%27m%20interested%20in%20your%20services%20and%20would%20like%20to%20build%20with%20you."
+            href="https://wa.me/2349012002058?text=Hello%20Ibrahim%2C%20I%20am%20interested%20in%20your%20software%20and%20network%20engineering%20services."
             target="_blank"
             rel="noopener"
-            class="icon-btn"
-            aria-label="Chat on WhatsApp"
+            class="action-icon-btn"
+            aria-label="Direct message on WhatsApp"
+            title="WhatsApp: +234 901 200 2058"
           >
-            <svg
-              class="icon"
-              style="color: #25d366"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
+            <svg class="nav-svg" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M20.105 3.895A11.883 11.883 0 0 0 12.007 0C5.444 0 .083 5.361.083 11.924c0 2.102.548 4.152 1.592 5.96L0 24l6.29-1.649a11.93 11.93 0 0 0 5.71 1.453h.005c6.565 0 11.922-5.361 11.922-11.924 0-3.185-1.24-6.18-3.822-8.985zM12.007 21.787a9.9 9.9 0 0 1-5.047-1.376l-.362-.215-3.735.979 1-3.64-.236-.373a9.876 9.876 0 0 1-1.514-5.238c0-5.46 4.445-9.904 9.907-9.904 2.647 0 5.13 1.031 7.001 2.902a9.854 9.854 0 0 1 2.897 7.001c0 5.462-4.447 9.864-9.911 9.864zm5.437-7.41c-.299-.149-1.766-.87-2.038-.968-.273-.1-.472-.149-.67.15-.198.298-.77.968-.943 1.167-.173.199-.347.224-.645.075-.3-.149-1.263-.465-2.406-1.484-.889-.793-1.489-1.772-1.664-2.072-.174-.298-.019-.46.13-.608.134-.133.299-.348.448-.522.15-.174.2-.298.3-.497.098-.2.05-.373-.026-.522-.074-.149-.67-1.612-.918-2.208-.243-.578-.49-.5-.67-.51l-.572-.01c-.198 0-.52.074-.793.373-.273.298-1.04 1.017-1.04 2.48s1.065 2.877 1.213 3.076c.15.2 2.095 3.2 5.077 4.487.71.307 1.263.49 1.695.626.712.227 1.36.195 1.872.118.57-.085 1.766-.722 2.014-1.42.248-.696.248-1.294.174-1.42-.074-.124-.273-.198-.572-.347z"
               />
             </svg>
           </a>
+
           <button
             id="theme-toggle"
-            class="icon-btn"
-            aria-label="Toggle colour theme"
+            class="action-icon-btn"
+            aria-label="Toggle dark/light theme"
+            title="Toggle theme"
           >
-            <!-- Moon -->
             <svg
-              class="icon icon-moon"
-              xmlns="http://www.w3.org/2000/svg"
+              class="nav-svg icon-moon"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2.2"
+              stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             >
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
             </svg>
-            <!-- Sun -->
             <svg
-              class="icon icon-sun"
-              xmlns="http://www.w3.org/2000/svg"
+              class="nav-svg icon-sun"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2.2"
+              stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
             >
@@ -111,1171 +129,2301 @@
               <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
             </svg>
           </button>
-          <a href="#contact" class="btn btn-nav">Let's talk</a>
-          <button
-            class="icon-btn mobile-menu-btn"
-            id="mobile-menu-btn"
-            aria-label="Open menu"
-            aria-expanded="false"
-          >
-            <svg
-              class="icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="12" x2="21" y2="12" />
-              <line x1="3" y1="18" x2="21" y2="18" />
-            </svg>
-          </button>
+
+          <a href="#contact" class="btn btn-nav">Start a Conversation</a>
         </div>
-      </div>
-      <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
-        <a href="#work">Work</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#philosophy">Philosophy</a>
-        <a href="#contact">Contact</a>
       </div>
     </header>
 
     <main>
-      <!-- ░░░ HERO ░░░ -->
-      <section class="hero" id="home">
-        <div class="container hero-container">
-          <p class="hero-role fade-up">
-            Ibrahim Isah Bawa &nbsp;·&nbsp; Full-Stack Engineer &amp; Data
-            Scientist &nbsp;·&nbsp;
-            <span class="grad-badge">B.Sc. Graduate 🎓</span>
-          </p>
+      <!-- â–‘â–‘â–‘ HERO SECTION â–‘â–‘â–‘ -->
+      <section class="hero-section" id="home">
+        <div class="page-container hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow-tag">
+              <span class="eyebrow-accent"></span>
+              COMPUTER SCIENTIST â€¢ SOFTWARE â€¢ NETWORKS â€¢ SECURITY â€¢ DATA
+            </div>
 
-          <h1 class="hero-title fade-up" style="--delay: 0.07s">
-            Building resilient digital<br />infrastructure at scale
-          </h1>
+            <h1 class="hero-headline">Technology Across the Stack.</h1>
 
-          <p class="hero-sub fade-up" style="--delay: 0.14s">
-            B.Sc. Computer Science graduate — Full-Stack Engineer &amp; Data
-            Scientist. 9+ live production platforms spanning healthcare,
-            fitness, gaming, agriculture, education, hospitality &amp;
-            inventory. I build scalable systems <em>and</em> extract
-            intelligence from data.
-          </p>
+            <p class="hero-statement">
+              I build software, engineer systems, work with data, and solve
+              technology problems across applications, infrastructure, networks,
+              and cybersecurity.
+            </p>
 
-          <div class="hero-actions fade-up" style="--delay: 0.2s">
-            <a href="#work" class="btn btn-primary">View Work</a>
-            <button onclick="openCV()" class="btn btn-ghost">View CV</button>
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-secondary">Letâ€™s Talk</a>
+              <button onclick="openCV()" class="btn btn-tertiary">
+                View Credentials
+              </button>
+            </div>
+
+            <div class="hero-meta-strip">
+              <div class="meta-item">
+                <span class="meta-label">Degree</span>
+                <span class="meta-value">B.Sc. Computer Science</span>
+              </div>
+              <div class="meta-divider"></div>
+              <div class="meta-item">
+                <span class="meta-label">Deployments</span>
+                <span class="meta-value">10+ Live Platforms</span>
+              </div>
+              <div class="meta-divider"></div>
+              <div class="meta-item">
+                <span class="meta-label">Infrastructure</span>
+                <span class="meta-value">Cisco · MikroTik · Starlink</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- ░░░ ABOUT ░░░ -->
-      <section class="about" id="about">
-        <div class="container">
-          <div class="about-inner">
-            <!-- Profile Photo -->
-            <div class="about-photo reveal">
-              <div class="photo-frame">
+      <!-- â–‘â–‘â–‘ ABOUT SECTION â–‘â–‘â–‘ -->
+      <section class="section about-section" id="about">
+        <div class="page-container">
+          <div class="section-header-compact">
+            <span class="section-kicker"
+              >01 / BACKGROUND &amp; ORIENTATION</span
+            >
+            <h2 class="section-title">
+              An Engineer Who Bridges Code and Physical Systems
+            </h2>
+          </div>
+
+          <div class="about-split-layout">
+            <div class="about-lead-col">
+              <blockquote class="lead-statement">
+                â€œSoftware is only as dependable as the network carrying it. I
+                engineer both with disciplined architecture and operational
+                rigor.â€
+              </blockquote>
+
+              <div class="credibility-matrix">
+                <div class="credibility-cell">
+                  <span class="cell-metric">B.Sc.</span>
+                  <span class="cell-label"
+                    >Computer Science Graduate, Federal University Birnin
+                    Kebbi</span
+                  >
+                </div>
+                <div class="credibility-cell">
+                  <span class="cell-metric">10+</span>
+                  <span class="cell-label"
+                    >Live Software Platforms in Active Production</span
+                  >
+                </div>
+                <div class="credibility-cell">
+                  <span class="cell-metric">Core</span>
+                  <span class="cell-label"
+                    >Cisco &amp; MikroTik VLAN Routing &amp; Managed
+                    Switches</span
+                  >
+                </div>
+                <div class="credibility-cell">
+                  <span class="cell-metric">99.9%</span>
+                  <span class="cell-label"
+                    >High-Availability Target for Enterprise Systems</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="about-narrative-col">
+              <p class="narrative-para">
+                I am a Computer Science graduate from Federal University, Birnin
+                Kebbi, working at the convergence of full-stack software
+                development, systems architecture, cybersecurity hardening, and
+                physical network engineering.
+              </p>
+              <p class="narrative-para">
+                My approach is rooted in systems thinking: building robust,
+                business-critical software like the
+                <strong>Sunglow Pharmacy Management &amp; POS Platform</strong>
+                and <strong>Horizon Hope Healthcare System</strong>, while
+                simultaneously architecting the underlying enterprise
+                infrastructure â€” high-capacity
+                <strong>Starlink Business satellite arrays</strong>,
+                <strong>Cisco Catalyst &amp; MikroTik routing fabrics</strong>,
+                <strong>4K IP CCTV surveillance grids</strong>, and structured
+                fiber cabling.
+              </p>
+              <p class="narrative-para">
+                Whether deploying multi-tenant web applications, segmenting
+                enterprise VLANs to protect financial transactions, or designing
+                data pipelines, I deliver technology that functions
+                deterministically under real-world pressure.
+              </p>
+
+              <!-- Stats Strip -->
+              <div class="about-stats-strip">
+                <div class="about-stat-box">
+                  <span class="stat-big">10+</span>
+                  <span class="stat-sub">Live Platforms in Production</span>
+                </div>
+                <div class="about-stat-box">
+                  <span class="stat-big">MERN / PHP</span>
+                  <span class="stat-sub">Full-Stack Web &amp; APIs</span>
+                </div>
+                <div class="about-stat-box">
+                  <span class="stat-big">Starlink</span>
+                  <span class="stat-sub">High-Performance Satellite</span>
+                </div>
+                <div class="about-stat-box">
+                  <span class="stat-big">CCTV 4K</span>
+                  <span class="stat-sub">IP Surveillance Grids</span>
+                </div>
+              </div>
+
+              <div class="about-action-row">
+                <a href="#expertise" class="text-link"
+                  >Explore Areas of Expertise &rarr;</a
+                >
+                <button onclick="openCV()" class="text-link">
+                  Curriculum Vitae Modal &rarr;
+                </button>
+                <a href="cv.html" target="_blank" class="text-link"
+                  >Standalone CV Page &nearr;</a
+                >
+                <a
+                  href="assets/whatsapp-status-flyer.jpg"
+                  download="Ibrahim-Isah-Bawa-Flyer.jpg"
+                  class="text-link"
+                  >WhatsApp Status Flyer &darr;</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- â–‘â–‘â–‘ AREAS OF EXPERTISE SECTION â–‘â–‘â–‘ -->
+      <section class="section expertise-section" id="expertise">
+        <div class="page-container">
+          <div class="section-header">
+            <div class="section-header-text">
+              <span class="section-kicker">02 / DOMAIN COMPETENCIES</span>
+              <h2 class="section-title">Areas of Expertise</h2>
+            </div>
+            <p class="section-desc">
+              Structured engineering capabilities covering software development,
+              systems, networking, security, data, and mobile platforms.
+            </p>
+          </div>
+
+          <div class="expertise-list">
+            <!-- 01 Software Engineering -->
+            <article class="expertise-row">
+              <div class="expertise-num">01</div>
+              <div class="expertise-main">
+                <h3 class="expertise-heading">Software Engineering</h3>
+                <p class="expertise-body">
+                  Full-stack applications, enterprise systems, APIs, databases,
+                  architecture, authentication, business workflows.
+                </p>
+                <div class="expertise-tags">
+                  <span class="spec-tag">React / Next.js</span>
+                  <span class="spec-tag">Node.js / Express</span>
+                  <span class="spec-tag">Laravel (PHP)</span>
+                  <span class="spec-tag">TypeScript</span>
+                  <span class="spec-tag">REST &amp; WebSockets</span>
+                  <span class="spec-tag">MySQL &amp; PostgreSQL</span>
+                  <span class="spec-tag">System Architecture</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 02 Networks & Infrastructure -->
+            <article class="expertise-row">
+              <div class="expertise-num">02</div>
+              <div class="expertise-main">
+                <h3 class="expertise-heading">Networks &amp; Infrastructure</h3>
+                <p class="expertise-body">
+                  Network architecture, routing, switching, wireless systems,
+                  MikroTik, server infrastructure, LAN/WAN environments.
+                </p>
+                <div class="expertise-tags">
+                  <span class="spec-tag">Cisco Catalyst Switching</span>
+                  <span class="spec-tag">MikroTik RouterOS</span>
+                  <span class="spec-tag">Starlink Business Satellite</span>
+                  <span class="spec-tag">802.1Q VLANs &amp; Trunking</span>
+                  <span class="spec-tag">Dual-WAN Failover</span>
+                  <span class="spec-tag">IP CCTV (PoE / NVR)</span>
+                  <span class="spec-tag">Cat6 &amp; Fiber Cabling</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 03 Cybersecurity -->
+            <article class="expertise-row">
+              <div class="expertise-num">03</div>
+              <div class="expertise-main">
+                <h3 class="expertise-heading">Cybersecurity</h3>
+                <p class="expertise-body">
+                  Security analysis, authentication, access control, system
+                  hardening, security-aware application development.
+                </p>
+                <div class="expertise-tags">
+                  <span class="spec-tag">Role-Based Access Control (RBAC)</span>
+                  <span class="spec-tag">Network Segmentation &amp; ACLs</span>
+                  <span class="spec-tag">TLS / SSL Encryption</span>
+                  <span class="spec-tag">Firewall Hardening</span>
+                  <span class="spec-tag">Port &amp; Perimeter Auditing</span>
+                  <span class="spec-tag">Threat Mitigation</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 04 Data & AI -->
+            <article class="expertise-row">
+              <div class="expertise-num">04</div>
+              <div class="expertise-main">
+                <h3 class="expertise-heading">Data &amp; AI</h3>
+                <p class="expertise-body">
+                  Data analysis, data science, intelligent systems, AI-assisted
+                  workflows, analytics.
+                </p>
+                <div class="expertise-tags">
+                  <span class="spec-tag"
+                    >Python Data Stack (Pandas / NumPy)</span
+                  >
+                  <span class="spec-tag">Relational Database Schemas</span>
+                  <span class="spec-tag">Business Intelligence Dashboards</span>
+                  <span class="spec-tag">Predictive Analytics</span>
+                  <span class="spec-tag">AI-Assisted Workflows</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 05 Systems & Enterprise Technology -->
+            <article class="expertise-row">
+              <div class="expertise-num">05</div>
+              <div class="expertise-main">
+                <h3 class="expertise-heading">
+                  Systems &amp; Enterprise Technology
+                </h3>
+                <p class="expertise-body">
+                  Business systems, POS platforms, school management systems,
+                  operational software, technology integration.
+                </p>
+                <div class="expertise-tags">
+                  <span class="spec-tag"
+                    >Pharmacy POS &amp; Dispensary Engines</span
+                  >
+                  <span class="spec-tag">Hardware Barcode Scanner APIs</span>
+                  <span class="spec-tag">Thermal ESC/POS Printers</span>
+                  <span class="spec-tag">Institutional School ERPs</span>
+                  <span class="spec-tag">Multi-Tenant Portals</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 06 Mobile Engineering -->
+            <article class="expertise-row">
+              <div class="expertise-num">06</div>
+              <div class="expertise-main">
+                <h3 class="expertise-heading">Mobile Engineering</h3>
+                <p class="expertise-body">
+                  Cross-platform mobile application development for iOS and
+                  Android with responsive native device integration.
+                </p>
+                <div class="expertise-tags">
+                  <span class="spec-tag">React Native</span>
+                  <span class="spec-tag">Expo Ecosystem</span>
+                  <span class="spec-tag">Cross-platform iOS &amp; Android</span>
+                  <span class="spec-tag"
+                    >Mobile Auth &amp; Offline Storage</span
+                  >
+                  <span class="spec-tag">Native Device Hardware APIs</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- â–‘â–‘â–‘ ALL 10 FEATURED PROJECTS SECTION â–‘â–‘â–‘ -->
+      <section class="section projects-section" id="projects">
+        <!-- Anchor for legacy #work links -->
+        <div id="work" style="position: absolute; top: -60px"></div>
+
+        <div class="page-container">
+          <div class="section-header">
+            <div class="section-header-text">
+              <span class="section-kicker">03 / PRODUCTION PLATFORMS</span>
+              <h2 class="section-title">
+                Ten Platforms. Real Operational Impact.
+              </h2>
+            </div>
+            <p class="section-desc">
+              Every platform below is a real, functional software product built
+              to solve business, healthcare, institutional, and community
+              challenges.
+            </p>
+          </div>
+
+          <!-- Editorial Category Filter -->
+          <div
+            class="filter-controls"
+            role="tablist"
+            aria-label="Project Categories"
+          >
+            <button
+              class="filter-pill active"
+              data-filter="all"
+              role="tab"
+              aria-selected="true"
+            >
+              All Platforms (10)
+            </button>
+            <button
+              class="filter-pill"
+              data-filter="healthcare"
+              role="tab"
+              aria-selected="false"
+            >
+              Healthcare &amp; POS
+            </button>
+            <button
+              class="filter-pill"
+              data-filter="enterprise"
+              role="tab"
+              aria-selected="false"
+            >
+              Enterprise &amp; Portals
+            </button>
+            <button
+              class="filter-pill"
+              data-filter="gaming"
+              role="tab"
+              aria-selected="false"
+            >
+              Gaming &amp; Web
+            </button>
+            <button
+              class="filter-pill"
+              data-filter="network"
+              role="tab"
+              aria-selected="false"
+            >
+              ðŸ›°ï¸ Networks &amp; Infra
+            </button>
+          </div>
+
+          <div class="project-showcases">
+            <!-- â”€â”€ PROJECT 01: Sunglow Pharmacy Management System â”€â”€ -->
+            <article
+              class="project-showcase"
+              data-category="healthcare enterprise"
+            >
+              <div class="showcase-visual">
+                <div class="project-window">
+                  <div class="window-bar">
+                    <span class="window-dot window-dot-r"></span>
+                    <span class="window-dot window-dot-y"></span>
+                    <span class="window-dot window-dot-g"></span>
+                  </div>
+                  <div class="project-img-wrapper">
+                    <img
+                      src="assets/sunglow-pharmacy.jpg"
+                      alt="Sunglow Pharmacy Management &amp; POS Dashboard"
+                      class="project-screenshot"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span class="window-project-label"
+                    >Sunglow Pharmacy â€” Live Dispensary &amp; POS</span
+                  >
+                </div>
+              </div>
+
+              <div class="showcase-details">
+                <div class="showcase-meta">
+                  <span class="showcase-index"
+                    >PROJECT 01 / HEALTHCARE POS</span
+                  >
+                  <span class="showcase-status live"
+                    >â— Active Commercial Production</span
+                  >
+                </div>
+
+                <h3 class="showcase-title">
+                  Sunglow Pharmacy Management System
+                </h3>
+
+                <p class="showcase-lead">
+                  Full-stack dispensary and point-of-sale platform handling
+                  inventory tracking, expiry date monitoring, hardware barcode
+                  scanning, and multi-register sales reconciliation.
+                </p>
+
+                <div class="case-study-table">
+                  <div class="case-item">
+                    <span class="case-label">Problem</span>
+                    <span class="case-value"
+                      >Manual dispensary record-keeping led to inventory
+                      leakage, expired medicine dispensation risks, and long
+                      customer checkout queues.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Approach</span>
+                    <span class="case-value"
+                      >Engineered a high-throughput POS web application with
+                      real-time lot/batch tracking, automated expiry warnings,
+                      barcode scanning, and multi-tier role-based access.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Architecture</span>
+                    <span class="case-value"
+                      >React SPA · Node.js/Express REST backend · MySQL
+                      relational schema · Hardware Barcode Scanner API · Thermal
+                      ESC/POS Receipt Engine.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Outcome</span>
+                    <span class="case-value"
+                      >100% elimination of expired drug dispensations, 65%
+                      faster checkout turnaround, and automated daily sales
+                      auditing across all dispensing counters.</span
+                    >
+                  </div>
+                </div>
+
+                <div class="showcase-actions">
+                  <a
+                    href="https://sunglowpharmacy.com.ng"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary"
+                  >
+                    Visit Live Site (sunglowpharmacy.com.ng) &nearr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- â”€â”€ PROJECT 02: Horizon Hope Healthcare Platform â”€â”€ -->
+            <article
+              class="project-showcase showcase-reversed"
+              data-category="healthcare enterprise"
+            >
+              <div class="showcase-visual">
+                <div class="project-window">
+                  <div class="window-bar">
+                    <span class="window-dot window-dot-r"></span>
+                    <span class="window-dot window-dot-y"></span>
+                    <span class="window-dot window-dot-g"></span>
+                  </div>
+                  <div class="project-img-wrapper">
+                    <img
+                      src="assets/horizon-hope.jpg"
+                      alt="Horizon Hope Healthcare Management Portal"
+                      class="project-screenshot"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span class="window-project-label"
+                    >Horizon Hope â€” Healthcare Platform</span
+                  >
+                </div>
+              </div>
+
+              <div class="showcase-details">
+                <div class="showcase-meta">
+                  <span class="showcase-index">PROJECT 02 / CLINICAL EMR</span>
+                  <span class="showcase-status live">â— Active Platform</span>
+                </div>
+
+                <h3 class="showcase-title">Horizon Hope</h3>
+
+                <p class="showcase-lead">
+                  Centralised clinic and hospital management portal enabling
+                  patient intake, electronic medical records (EMR), appointment
+                  dispatch, and clinical department triage.
+                </p>
+
+                <div class="case-study-table">
+                  <div class="case-item">
+                    <span class="case-label">Problem</span>
+                    <span class="case-value"
+                      >Patient data fragmented across paper records â€”
+                      scheduling conflicts and poor inter-department
+                      coordination.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Approach</span>
+                    <span class="case-value"
+                      >Centralised dashboard with role-based access, appointment
+                      scheduling, and real-time patient queue tracking.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Architecture</span>
+                    <span class="case-value"
+                      >Laravel REST API · React SPA · MySQL relational schema ·
+                      JWT auth flow.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Outcome</span>
+                    <span class="case-value"
+                      >Scheduling conflicts down 70%. All patient coordination
+                      unified into one live system.</span
+                    >
+                  </div>
+                </div>
+
+                <div class="showcase-actions">
+                  <a
+                    href="https://horizonhope.thegreatstack.com"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary"
+                  >
+                    Visit Live Site (horizonhope.thegreatstack.com) &nearr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- â”€â”€ PROJECT 03: eGaming League Hub â”€â”€ -->
+            <article class="project-showcase" data-category="gaming">
+              <div class="showcase-visual">
+                <div class="project-window">
+                  <div class="window-bar">
+                    <span class="window-dot window-dot-r"></span>
+                    <span class="window-dot window-dot-y"></span>
+                    <span class="window-dot window-dot-g"></span>
+                  </div>
+                  <div class="window-body">
+                    <div
+                      class="ui-row short"
+                      style="animation-delay: 0.2s"
+                    ></div>
+                    <div
+                      class="ui-row block"
+                      style="animation-delay: 0.1s"
+                    ></div>
+                    <div
+                      class="ui-row wide"
+                      style="animation-delay: 0.4s"
+                    ></div>
+                    <div class="ui-block-row">
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.3s"
+                      ></div>
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.5s"
+                      ></div>
+                    </div>
+                    <div
+                      class="ui-row med"
+                      style="animation-delay: 0.25s"
+                    ></div>
+                  </div>
+                  <span class="window-project-label"
+                    >eGaming Hub â€” League Platform</span
+                  >
+                </div>
+              </div>
+
+              <div class="showcase-details">
+                <div class="showcase-meta">
+                  <span class="showcase-index">PROJECT 03 / ESPORTS</span>
+                  <span class="showcase-status live">â— Active Community</span>
+                </div>
+
+                <h3 class="showcase-title">eGaming League Hub</h3>
+
+                <p class="showcase-lead">
+                  Structured esports tournament and league management platform
+                  handling team rosters, automated standings, and player
+                  statistics.
+                </p>
+
+                <div class="case-study-table">
+                  <div class="case-item">
+                    <span class="case-label">Problem</span>
+                    <span class="case-value"
+                      >Competitive gaming communities lacked a structured
+                      platform for league management, standings, and player
+                      profiles.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Approach</span>
+                    <span class="case-value"
+                      >Feature-complete league system with real-time match
+                      updates, player rankings, and team management.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Architecture</span>
+                    <span class="case-value"
+                      >Node.js / Express API · MongoDB flexible data model ·
+                      WebSocket live standings.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Outcome</span>
+                    <span class="case-value"
+                      >500+ players across multiple active leagues within the
+                      first month of launch.</span
+                    >
+                  </div>
+                </div>
+
+                <div class="showcase-actions">
+                  <a
+                    href="https://egaming.thegreatstack.com"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary"
+                  >
+                    Visit Live Site (egaming.thegreatstack.com) &nearr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- â”€â”€ PROJECT 04: Battlegrounds Tournament Platform â”€â”€ -->
+            <article
+              class="project-showcase showcase-reversed"
+              data-category="gaming"
+            >
+              <div class="showcase-visual">
+                <div class="project-window">
+                  <div class="window-bar">
+                    <span class="window-dot window-dot-r"></span>
+                    <span class="window-dot window-dot-y"></span>
+                    <span class="window-dot window-dot-g"></span>
+                  </div>
+                  <div class="window-body">
+                    <div class="ui-block-row">
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.1s"
+                      ></div>
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.3s"
+                      ></div>
+                    </div>
+                    <div
+                      class="ui-row wide"
+                      style="animation-delay: 0.2s"
+                    ></div>
+                    <div
+                      class="ui-row block"
+                      style="animation-delay: 0.5s"
+                    ></div>
+                    <div
+                      class="ui-row short"
+                      style="animation-delay: 0.15s"
+                    ></div>
+                    <div class="ui-row med" style="animation-delay: 0.4s"></div>
+                  </div>
+                  <span class="window-project-label"
+                    >Battlegrounds â€” Tournament Engine</span
+                  >
+                </div>
+              </div>
+
+              <div class="showcase-details">
+                <div class="showcase-meta">
+                  <span class="showcase-index"
+                    >PROJECT 04 / REAL-TIME ENGINE</span
+                  >
+                  <span class="showcase-status live">â— High Concurrency</span>
+                </div>
+
+                <h3 class="showcase-title">
+                  Battlegrounds Tournament Platform
+                </h3>
+
+                <p class="showcase-lead">
+                  End-to-end tournament orchestration platform with dynamic
+                  single/double-elimination bracket generation, player seeding,
+                  and live match scoring.
+                </p>
+
+                <div class="case-study-table">
+                  <div class="case-item">
+                    <span class="case-label">Problem</span>
+                    <span class="case-value"
+                      >Large-scale tournaments required manual bracket
+                      management â€” existing tools couldn't handle real-time
+                      participant loads.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Approach</span>
+                    <span class="case-value"
+                      >End-to-end orchestration: automated bracket generation,
+                      live match scoring, and real-time standings
+                      propagation.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Architecture</span>
+                    <span class="case-value"
+                      >Event-driven backend · Redis pub/sub · Knockout +
+                      Round-Robin scheduling · concurrency-optimised.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Outcome</span>
+                    <span class="case-value"
+                      >20+ simultaneous tournaments. Peak concurrent traffic
+                      handled with zero degradation.</span
+                    >
+                  </div>
+                </div>
+
+                <div class="showcase-actions">
+                  <a
+                    href="https://battlegrounds.thegreatstack.com"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary"
+                  >
+                    Visit Live Site (battlegrounds.thegreatstack.com) &nearr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- â”€â”€ PROJECT 05: TheGreatStack Platform â”€â”€ -->
+            <article class="project-showcase" data-category="enterprise">
+              <div class="showcase-visual">
+                <div class="project-window">
+                  <div class="window-bar">
+                    <span class="window-dot window-dot-r"></span>
+                    <span class="window-dot window-dot-y"></span>
+                    <span class="window-dot window-dot-g"></span>
+                  </div>
+                  <div class="window-body">
+                    <div
+                      class="ui-row wide"
+                      style="animation-delay: 0.3s"
+                    ></div>
+                    <div class="ui-block-row">
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.1s"
+                      ></div>
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.5s"
+                      ></div>
+                    </div>
+                    <div
+                      class="ui-row short"
+                      style="animation-delay: 0.2s"
+                    ></div>
+                    <div
+                      class="ui-row block"
+                      style="animation-delay: 0.4s"
+                    ></div>
+                    <div
+                      class="ui-row med"
+                      style="animation-delay: 0.35s"
+                    ></div>
+                  </div>
+                  <span class="window-project-label"
+                    >TheGreatStack â€” Digital Ecosystem</span
+                  >
+                </div>
+              </div>
+
+              <div class="showcase-details">
+                <div class="showcase-meta">
+                  <span class="showcase-index">PROJECT 05 / ARCHITECTURE</span>
+                  <span class="showcase-status enterprise"
+                    >â— Multi-Tenant Infrastructure</span
+                  >
+                </div>
+
+                <h3 class="showcase-title">TheGreatStack</h3>
+
+                <p class="showcase-lead">
+                  Multi-tenant ecosystem with subdomain routing, shared
+                  authentication, and unified administrative management hosting
+                  multiple product lines.
+                </p>
+
+                <div class="case-study-table">
+                  <div class="case-item">
+                    <span class="case-label">Problem</span>
+                    <span class="case-value"
+                      >Needed a central platform to host, showcase, and serve
+                      multiple sub-products under one unified ecosystem.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Approach</span>
+                    <span class="case-value"
+                      >Multi-tenant architecture with subdomain routing, shared
+                      authentication, and unified admin management.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Architecture</span>
+                    <span class="case-value"
+                      >Subdomain-based multi-tenancy · centralised identity ·
+                      shared services layer · independent CI/CD pipelines per
+                      product.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Outcome</span>
+                    <span class="case-value"
+                      >All products on one unified infrastructure â€” reduced
+                      operational overhead, seamless cross-platform user
+                      management.</span
+                    >
+                  </div>
+                </div>
+
+                <div class="showcase-actions">
+                  <a
+                    href="https://thegreatstack.com"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary"
+                  >
+                    Visit Live Site (thegreatstack.com) &nearr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- â”€â”€ PROJECT 06: Inventory Management System â”€â”€ -->
+            <article
+              class="project-showcase showcase-reversed"
+              data-category="enterprise"
+            >
+              <div class="showcase-visual">
+                <div class="project-window">
+                  <div class="window-bar">
+                    <span class="window-dot window-dot-r"></span>
+                    <span class="window-dot window-dot-y"></span>
+                    <span class="window-dot window-dot-g"></span>
+                  </div>
+                  <div class="window-body">
+                    <div class="ui-block-row">
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.2s"
+                      ></div>
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.4s"
+                      ></div>
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.1s"
+                      ></div>
+                    </div>
+                    <div
+                      class="ui-row wide"
+                      style="animation-delay: 0.15s"
+                    ></div>
+                    <div class="ui-row med" style="animation-delay: 0.3s"></div>
+                    <div
+                      class="ui-row short"
+                      style="animation-delay: 0.5s"
+                    ></div>
+                  </div>
+                  <span class="window-project-label"
+                    >Inventory System â€” Stock Management</span
+                  >
+                </div>
+              </div>
+
+              <div class="showcase-details">
+                <div class="showcase-meta">
+                  <span class="showcase-index"
+                    >PROJECT 06 / ENTERPRISE ERP</span
+                  >
+                  <span class="showcase-status live">â— Active Operations</span>
+                </div>
+
+                <h3 class="showcase-title">Inventory Management System</h3>
+
+                <p class="showcase-lead">
+                  Full-featured stock tracking platform with real-time level
+                  monitoring, purchase order automation, supplier management,
+                  and financial reconciliation.
+                </p>
+
+                <div class="case-study-table">
+                  <div class="case-item">
+                    <span class="case-label">Problem</span>
+                    <span class="case-value"
+                      >Businesses struggled with stock tracking, purchase
+                      orders, and supplier management across disconnected
+                      spreadsheets and manual records.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Approach</span>
+                    <span class="case-value"
+                      >Full-featured inventory platform with real-time stock
+                      levels, automated low-stock alerts, supplier management,
+                      and detailed analytics.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Architecture</span>
+                    <span class="case-value"
+                      >React SPA · Node.js/Express REST API · MySQL relational
+                      schema · role-based access control.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Outcome</span>
+                    <span class="case-value"
+                      >Eliminated manual stock reconciliation â€” real-time
+                      visibility across products, suppliers, and purchase orders
+                      in one system.</span
+                    >
+                  </div>
+                </div>
+
+                <div class="showcase-actions">
+                  <a
+                    href="https://inventory.thegreatstack.com"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary"
+                  >
+                    Visit Live Site (inventory.thegreatstack.com) &nearr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- â”€â”€ PROJECT 07: Workout Tracker â”€â”€ -->
+            <article class="project-showcase" data-category="healthcare">
+              <div class="showcase-visual">
+                <div class="project-window">
+                  <div class="window-bar">
+                    <span class="window-dot window-dot-r"></span>
+                    <span class="window-dot window-dot-y"></span>
+                    <span class="window-dot window-dot-g"></span>
+                  </div>
+                  <div class="window-body">
+                    <div
+                      class="ui-row wide"
+                      style="animation-delay: 0.1s"
+                    ></div>
+                    <div
+                      class="ui-row block"
+                      style="animation-delay: 0.3s"
+                    ></div>
+                    <div class="ui-block-row">
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.2s"
+                      ></div>
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.5s"
+                      ></div>
+                    </div>
+                    <div
+                      class="ui-row short"
+                      style="animation-delay: 0.4s"
+                    ></div>
+                  </div>
+                  <span class="window-project-label"
+                    >Workout Tracker â€” Fitness Platform</span
+                  >
+                </div>
+              </div>
+
+              <div class="showcase-details">
+                <div class="showcase-meta">
+                  <span class="showcase-index"
+                    >PROJECT 07 / HEALTH &amp; FITNESS</span
+                  >
+                  <span class="showcase-status live"
+                    >â— Progressive Web App</span
+                  >
+                </div>
+
+                <h3 class="showcase-title">Workout Tracker</h3>
+
+                <p class="showcase-lead">
+                  Fitness tracking platform featuring custom routine builders,
+                  weight &amp; rep logs, interactive workout analytics, and
+                  progress visualization charts.
+                </p>
+
+                <div class="case-study-table">
+                  <div class="case-item">
+                    <span class="case-label">Problem</span>
+                    <span class="case-value"
+                      >Users struggled to track workouts, plan routines, and
+                      visualize fitness progress across fragmented apps and
+                      paper logs.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Approach</span>
+                    <span class="case-value"
+                      >Feature-complete workout tracking platform with a custom
+                      routine builder, history logs, progress analytics, and
+                      interactive charts.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Architecture</span>
+                    <span class="case-value"
+                      >React SPA · Node.js/Express API · MongoDB database · JWT
+                      auth flow.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Outcome</span>
+                    <span class="case-value"
+                      >Seamless workout tracking and progress visualization,
+                      improving user consistency and routine adherence.</span
+                    >
+                  </div>
+                </div>
+
+                <div class="showcase-actions">
+                  <a
+                    href="https://workout.thegreatstack.com"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary"
+                  >
+                    Visit Live Site (workout.thegreatstack.com) &nearr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- â”€â”€ PROJECT 08: Hotel Booking Platform â”€â”€ -->
+            <article
+              class="project-showcase showcase-reversed"
+              data-category="enterprise"
+            >
+              <div class="showcase-visual">
+                <div class="project-window">
+                  <div class="window-bar">
+                    <span class="window-dot window-dot-r"></span>
+                    <span class="window-dot window-dot-y"></span>
+                    <span class="window-dot window-dot-g"></span>
+                  </div>
+                  <div class="window-body">
+                    <div
+                      class="ui-row wide"
+                      style="animation-delay: 0.3s"
+                    ></div>
+                    <div
+                      class="ui-row short"
+                      style="animation-delay: 0.1s"
+                    ></div>
+                    <div class="ui-block-row">
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.4s"
+                      ></div>
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.2s"
+                      ></div>
+                    </div>
+                    <div class="ui-row med" style="animation-delay: 0.5s"></div>
+                  </div>
+                  <span class="window-project-label"
+                    >Hotel Platform â€” Property Management</span
+                  >
+                </div>
+              </div>
+
+              <div class="showcase-details">
+                <div class="showcase-meta">
+                  <span class="showcase-index">PROJECT 08 / HOSPITALITY</span>
+                  <span class="showcase-status live">â— Property System</span>
+                </div>
+
+                <h3 class="showcase-title">Hotel Booking Platform</h3>
+
+                <p class="showcase-lead">
+                  End-to-end hospitality management solution with real-time room
+                  availability calendar, guest check-in/out flows, automated
+                  invoicing, and admin dashboard.
+                </p>
+
+                <div class="case-study-table">
+                  <div class="case-item">
+                    <span class="case-label">Problem</span>
+                    <span class="case-value"
+                      >Hospitality businesses needed a modern booking system
+                      with room management, guest profiles, and real-time
+                      availability â€” without expensive third-party SaaS
+                      fees.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Approach</span>
+                    <span class="case-value"
+                      >End-to-end hotel management solution with online booking,
+                      room availability calendar, guest check-in/out flows,
+                      invoicing, and an admin dashboard.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Architecture</span>
+                    <span class="case-value"
+                      >Laravel REST API · React SPA · MySQL · JWT auth · email
+                      notification pipeline.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Outcome</span>
+                    <span class="case-value"
+                      >Full property management system â€” from online
+                      reservation to checkout â€” replacing manual booking
+                      processes with a unified platform.</span
+                    >
+                  </div>
+                </div>
+
+                <div class="showcase-actions">
+                  <a
+                    href="https://hotel.thegreatstack.com"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary"
+                  >
+                    Visit Live Site (hotel.thegreatstack.com) &nearr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- â”€â”€ PROJECT 09: NAWIA Zamfara Chapter â”€â”€ -->
+            <article class="project-showcase" data-category="enterprise">
+              <div class="showcase-visual">
+                <div class="project-window">
+                  <div class="window-bar">
+                    <span class="window-dot window-dot-r"></span>
+                    <span class="window-dot window-dot-y"></span>
+                    <span class="window-dot window-dot-g"></span>
+                  </div>
+                  <div class="window-body">
+                    <div
+                      class="ui-row short"
+                      style="animation-delay: 0.2s"
+                    ></div>
+                    <div class="ui-row med" style="animation-delay: 0.1s"></div>
+                    <div class="ui-block-row">
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.3s"
+                      ></div>
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.5s"
+                      ></div>
+                    </div>
+                    <div
+                      class="ui-row wide"
+                      style="animation-delay: 0.4s"
+                    ></div>
+                  </div>
+                  <span class="window-project-label"
+                    >NAWIA â€” Agricultural Platform</span
+                  >
+                </div>
+              </div>
+
+              <div class="showcase-details">
+                <div class="showcase-meta">
+                  <span class="showcase-index">PROJECT 09 / CIVIC TECH</span>
+                  <span class="showcase-status live"
+                    >â— Community Deployment</span
+                  >
+                </div>
+
+                <h3 class="showcase-title">NAWIA Zamfara Chapter</h3>
+
+                <p class="showcase-lead">
+                  Agricultural empowerment portal providing rural women farmers
+                  with resource directories, weather forecasting, training
+                  guides, and cooperative market access.
+                </p>
+
+                <div class="case-study-table">
+                  <div class="case-item">
+                    <span class="case-label">Problem</span>
+                    <span class="case-value"
+                      >Women farmers in Zamfara lacked an integrated platform to
+                      access sustainable agricultural resources, training
+                      programs, and direct market opportunities.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Approach</span>
+                    <span class="case-value"
+                      >Developed an empowerment portal featuring resource
+                      directories, weather updates, agricultural training
+                      guides, and community forum.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Architecture</span>
+                    <span class="case-value"
+                      >Full-Stack PHP/Laravel backend, responsive UI, MySQL
+                      relational schema, SMS-gateway alerts integration.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Outcome</span>
+                    <span class="case-value"
+                      >Facilitated access to training and agricultural resources
+                      for 500+ active state-wide female farmers.</span
+                    >
+                  </div>
+                </div>
+
+                <div class="showcase-actions">
+                  <a
+                    href="https://nawiazamfarachapter.com.ng"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary"
+                  >
+                    Visit Live Site (nawiazamfarachapter.com.ng) &nearr;
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- â”€â”€ PROJECT 10: Sarki Mudi Academy Portal â”€â”€ -->
+            <article
+              class="project-showcase showcase-reversed"
+              data-category="enterprise"
+            >
+              <div class="showcase-visual">
+                <div class="project-window">
+                  <div class="window-bar">
+                    <span class="window-dot window-dot-r"></span>
+                    <span class="window-dot window-dot-y"></span>
+                    <span class="window-dot window-dot-g"></span>
+                  </div>
+                  <div class="window-body">
+                    <div class="ui-row med" style="animation-delay: 0.3s"></div>
+                    <div class="ui-block-row">
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.1s"
+                      ></div>
+                      <div
+                        class="ui-row block-half"
+                        style="animation-delay: 0.4s"
+                      ></div>
+                    </div>
+                    <div
+                      class="ui-row wide"
+                      style="animation-delay: 0.2s"
+                    ></div>
+                    <div
+                      class="ui-row block"
+                      style="animation-delay: 0.5s"
+                    ></div>
+                  </div>
+                  <span class="window-project-label"
+                    >Sarki Mudi Academy â€” Portal</span
+                  >
+                </div>
+              </div>
+
+              <div class="showcase-details">
+                <div class="showcase-meta">
+                  <span class="showcase-index">PROJECT 10 / EDUCATION ERP</span>
+                  <span class="showcase-status live">â— School Management</span>
+                </div>
+
+                <h3 class="showcase-title">Sarki Mudi Academy Portal</h3>
+
+                <p class="showcase-lead">
+                  Institutional school management portal handling online student
+                  admissions, academic term grading, report card generation, and
+                  curriculum calendars.
+                </p>
+
+                <div class="case-study-table">
+                  <div class="case-item">
+                    <span class="case-label">Problem</span>
+                    <span class="case-value"
+                      >Sarki Mudi Academy needed to transition manual student
+                      admissions, administrative records, and curriculum
+                      progression to a unified system.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Approach</span>
+                    <span class="case-value"
+                      >Created a comprehensive school management portal
+                      featuring online student enrolment, academic report cards,
+                      teacher grading interface, and curriculum calendar.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Architecture</span>
+                    <span class="case-value"
+                      >PHP/Laravel framework, MySQL database, role-based
+                      controls for administration, teachers, and parents.</span
+                    >
+                  </div>
+                  <div class="case-item">
+                    <span class="case-label">Outcome</span>
+                    <span class="case-value"
+                      >Automated admissions and terminal reports for 300+
+                      primary/nursery students, reducing administrative overhead
+                      by 60%.</span
+                    >
+                  </div>
+                </div>
+
+                <div class="showcase-actions">
+                  <a
+                    href="https://sarkimudiacademykamba.com.ng"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-primary"
+                  >
+                    Visit Live Site (sarkimudiacademykamba.com.ng) &nearr;
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- â–‘â–‘â–‘ DEDICATED NETWORK & INFRASTRUCTURE SECTION â–‘â–‘â–‘ -->
+      <section class="section network-section" id="network">
+        <div class="page-container">
+          <div class="section-header">
+            <div class="section-header-text">
+              <span class="section-kicker">04 / CORE INFRASTRUCTURE</span>
+              <h2 class="section-title">
+                Enterprise Networks &amp; Physical Infrastructure
+              </h2>
+            </div>
+            <p class="section-desc">
+              Physical datacenter racks, high-performance Starlink satellite
+              uplinks, Cisco/MikroTik core VLAN routing fabrics, and enterprise
+              IP CCTV grids.
+            </p>
+          </div>
+
+          <div class="network-cards-grid">
+            <!-- Deployment 1: Starlink Business -->
+            <article class="network-deploy-card">
+              <div class="network-card-img-wrapper">
                 <img
-                  src="myimage.png"
-                  alt="Ibrahim Isah Bawa — Full-Stack Engineer & Data Scientist"
-                  class="profile-img"
+                  src="assets/starlink-rooftop.jpg"
+                  alt="Commercial Rooftop Starlink High-Performance Satellite Dish Installation — Real Deployment"
+                  class="network-card-img"
+                  loading="lazy"
                 />
-                <div class="photo-badge">
-                  <span class="photo-badge-dot"></span>
-                  Available for hire
+                <span class="network-card-badge">Satellite Uplink</span>
+              </div>
+              <div class="network-card-content">
+                <span class="network-card-kicker">CARRIER WAN</span>
+                <h3 class="network-card-title">
+                  Starlink Business Satellite Deployments
+                </h3>
+                <p class="network-card-desc">
+                  Rooftop high-performance parabolic satellite dish
+                  installations with ruggedized outdoor Cat6A cabling, surge
+                  suppression, and dual-WAN automated failover for zero
+                  downtime.
+                </p>
+                <div class="network-card-specs">
+                  <span class="spec-pill">Low-Earth Orbit Backhaul</span>
+                  <span class="spec-pill">220+ Mbps Downlink</span>
+                  <span class="spec-pill">Automated ISP Failover</span>
                 </div>
               </div>
-            </div>
+            </article>
 
-            <div class="about-text reveal" style="--delay: 0.08s">
-              <span class="eyebrow">About</span>
-              <h2>Engineering &amp; data,<br />top to bottom.</h2>
-              <p>
-                B.Sc. Computer Science graduate (Federal University, Birnin
-                Kebbi) with deep expertise in the MERN stack, Laravel, and data
-                science. I build production-grade platforms that handle
-                real-world complexity — and extract actionable intelligence from
-                data.
-              </p>
-              <p>
-                From multi-tenant hotel booking systems to healthcare dashboards
-                to competitive gaming ecosystems — every system I ship is
-                designed to scale and to inform.
-              </p>
-              <p class="strong-line">
-                I don't just ship features. I think in systems.
-              </p>
-            </div>
+            <!-- Deployment 2: Cisco & MikroTik -->
+            <article class="network-deploy-card">
+              <div class="network-card-img-wrapper">
+                <img
+                  src="assets/cisco-network-rack.jpg"
+                  alt="Enterprise Datacenter Server Rack with Cisco Catalyst and MikroTik Core Routers"
+                  class="network-card-img"
+                  loading="lazy"
+                />
+                <span class="network-card-badge">Core Routing</span>
+              </div>
+              <div class="network-card-content">
+                <span class="network-card-kicker">VLAN FABRIC</span>
+                <h3 class="network-card-title">
+                  Cisco &amp; MikroTik Core Routing &amp; Switching
+                </h3>
+                <p class="network-card-desc">
+                  Enterprise-grade network segmentation via 802.1Q VLANs.
+                  Complete isolation of financial POS terminals, surveillance
+                  cameras, management consoles, and guest Wi-Fi.
+                </p>
+                <div class="network-card-specs">
+                  <span class="spec-pill">Cisco Catalyst Core</span>
+                  <span class="spec-pill">MikroTik RouterOS</span>
+                  <span class="spec-pill">Port Security &amp; QoS</span>
+                </div>
+              </div>
+            </article>
 
-            <div class="about-stats reveal" style="--delay: 0.16s">
-              <div class="stat-card">
-                <div class="stat-num">9+</div>
-                <div class="stat-label">Live platforms<br />in production</div>
+            <!-- Deployment 3: 4K IP CCTV -->
+            <article class="network-deploy-card">
+              <div class="network-card-img-wrapper">
+                <img
+                  src="assets/cctv-dome-camera.jpg"
+                  alt="Enterprise 4K IP CCTV Dome Camera — Wall-Mounted Security Surveillance"
+                  class="network-card-img"
+                  loading="lazy"
+                />
+                <span class="network-card-badge">Security Grid</span>
               </div>
-              <div class="stat-card">
-                <div class="stat-num">MERN</div>
-                <div class="stat-label">Primary stack<br />+ Laravel (PHP)</div>
+              <div class="network-card-content">
+                <span class="network-card-kicker">PHYSICAL SECURITY</span>
+                <h3 class="network-card-title">
+                  Enterprise IP CCTV Surveillance Matrix
+                </h3>
+                <p class="network-card-desc">
+                  High-definition PoE IP camera grids connected to central
+                  multi-terabyte NVR RAID storage, featuring AI perimeter
+                  tripwires, night vision, and encrypted remote RTSP access.
+                </p>
+                <div class="network-card-specs">
+                  <span class="spec-pill">4K PoE / H.265+ Codec</span>
+                  <span class="spec-pill">16TB RAID-5 Storage</span>
+                  <span class="spec-pill">WireGuard Encrypted Stream</span>
+                </div>
               </div>
-              <div class="stat-card">
-                <div class="stat-num">📊</div>
-                <div class="stat-label">Data Science<br />Certified</div>
+            </article>
+
+            <!-- Deployment 4: Structured Cabling -->
+            <article class="network-deploy-card">
+              <div class="network-card-img-wrapper">
+                <img
+                  src="assets/structured-cabling.jpg"
+                  alt="Organized Datacenter Structured Cabling with Patch Panels and Fiber Optic Links"
+                  class="network-card-img"
+                  loading="lazy"
+                />
+                <span class="network-card-badge">Cable Architecture</span>
               </div>
-              <div class="stat-card">
-                <div class="stat-num">🎓</div>
-                <div class="stat-label">B.Sc. Graduate<br />Comp. Science</div>
+              <div class="network-card-content">
+                <span class="network-card-kicker">STRUCTURED CABLING</span>
+                <h3 class="network-card-title">
+                  Structured Cat6 &amp; Fiber Optic Backbones
+                </h3>
+                <p class="network-card-desc">
+                  Standards-compliant cable management with high-density patch
+                  panels, labeled trunk drops, fiber optic SFP+ uplinks, and
+                  certified Fluke line testing for noise-free transmission.
+                </p>
+                <div class="network-card-specs">
+                  <span class="spec-pill">10G SFP+ Uplinks</span>
+                  <span class="spec-pill">Cat6A 550MHz Drops</span>
+                  <span class="spec-pill">Certified Fluke Verified</span>
+                </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- ░░░ WORK ░░░ -->
-      <section class="work" id="work">
-        <div class="container">
-          <div class="section-header reveal">
-            <span class="eyebrow">Selected Work</span>
-            <h2>Nine platforms.<br />Real impact.</h2>
-            <p>
-              Each project is built from requirements to production —
-              architecture, backend, frontend, and deployment.
+      <!-- â–‘â–‘â–‘ INTERACTIVE TELEMETRY & DIAGNOSTIC CONSOLE â–‘â–‘â–‘ -->
+      <section class="section terminal-section" id="terminal">
+        <div class="page-container">
+          <div class="section-header">
+            <div class="section-header-text">
+              <span class="section-kicker">05 / LIVE TELEMETRY</span>
+              <h2 class="section-title">Infrastructure Diagnostic Console</h2>
+            </div>
+            <p class="section-desc">
+              Interactive diagnostic tool to inspect live simulated network
+              telemetry, routing configs, surveillance statuses, and application
+              health.
             </p>
           </div>
 
-          <!-- ── Project 01 ── -->
-          <article class="project reveal">
-            <div class="project-info">
-              <div class="project-top">
-                <span class="project-num">01</span>
-                <span class="project-badge">React · Laravel · MySQL</span>
+          <div class="terminal-wrapper">
+            <div class="terminal-bar">
+              <div class="terminal-controls">
+                <span class="term-dot dot-close"></span>
+                <span class="term-dot dot-min"></span>
+                <span class="term-dot dot-max"></span>
               </div>
-              <h3>Horizon Hope</h3>
-              <dl class="case-study">
-                <div class="case-row">
-                  <dt>Problem</dt>
-                  <dd>
-                    Patient data fragmented across manual records — scheduling
-                    conflicts and poor inter-department coordination.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Approach</dt>
-                  <dd>
-                    Centralised dashboard with role-based access, appointment
-                    scheduling, and real-time status tracking.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Architecture</dt>
-                  <dd>
-                    Laravel REST API · React SPA · MySQL relational schema · JWT
-                    auth flow.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Outcome</dt>
-                  <dd>
-                    Scheduling conflicts down 70%. All patient coordination
-                    unified into one live system.
-                  </dd>
-                </div>
-              </dl>
-              <a
-                href="https://horizonhope.thegreatstack.com"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-ghost btn-sm"
+              <span class="terminal-title-text"
+                >ibrahim@thegreatstack-core:~ (Production Systems
+                Telemetry)</span
               >
-                Visit Live Site
-                <svg
-                  class="icon-sm"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
-              </a>
+              <div class="terminal-bar-badge">SYSTEM HEALTH: 100% NOMINAL</div>
             </div>
-            <div class="project-visual">
-              <div class="project-window">
-                <div class="window-bar">
-                  <span class="window-dot window-dot-r"></span>
-                  <span class="window-dot window-dot-y"></span>
-                  <span class="window-dot window-dot-g"></span>
-                </div>
-                <div class="window-body">
-                  <div class="ui-row wide" style="animation-delay: 0.1s"></div>
-                  <div class="ui-row short" style="animation-delay: 0.3s"></div>
-                  <div class="ui-block-row">
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.2s"
-                    ></div>
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.4s"
-                    ></div>
-                  </div>
-                  <div class="ui-row med" style="animation-delay: 0.15s"></div>
-                  <div class="ui-row block" style="animation-delay: 0.5s"></div>
-                  <div class="ui-row wide" style="animation-delay: 0.35s"></div>
-                  <div
-                    class="ui-row short"
-                    style="animation-delay: 0.25s"
-                  ></div>
-                </div>
-                <span class="window-project-label"
-                  >Horizon Hope — Healthcare Platform</span
-                >
-              </div>
-            </div>
-          </article>
 
-          <!-- ── Project 02 ── -->
-          <article class="project project-alt reveal">
-            <div class="project-info">
-              <div class="project-top">
-                <span class="project-num">02</span>
-                <span class="project-badge">Node.js · Express · MongoDB</span>
-              </div>
-              <h3>eGaming League Hub</h3>
-              <dl class="case-study">
-                <div class="case-row">
-                  <dt>Problem</dt>
-                  <dd>
-                    Competitive gaming communities lacked a structured platform
-                    for league management, standings, and player profiles.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Approach</dt>
-                  <dd>
-                    Feature-complete league system with real-time match updates,
-                    player rankings, and team management.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Architecture</dt>
-                  <dd>
-                    Node.js / Express API · MongoDB flexible data model ·
-                    WebSocket live standings.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Outcome</dt>
-                  <dd>
-                    500+ players across multiple active leagues within the first
-                    month of launch.
-                  </dd>
-                </div>
-              </dl>
-              <a
-                href="https://egaming.thegreatstack.com"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-ghost btn-sm"
-              >
-                Visit Live Site
-                <svg
-                  class="icon-sm"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
-              </a>
+            <div class="terminal-tabs-bar" role="tablist">
+              <button class="term-tab-btn active" data-cmd="starlink">
+                Starlink Satellite Uplink
+              </button>
+              <button class="term-tab-btn" data-cmd="cisco">
+                Cisco Core VLANs
+              </button>
+              <button class="term-tab-btn" data-cmd="cctv">
+                IP CCTV Surveillance Grid
+              </button>
+              <button class="term-tab-btn" data-cmd="sunglow">
+                Sunglow POS Health API
+              </button>
+              <button class="term-tab-btn" data-cmd="speedtest">
+                Multi-WAN Speedtest
+              </button>
             </div>
-            <div class="project-visual">
-              <div class="project-window">
-                <div class="window-bar">
-                  <span class="window-dot window-dot-r"></span>
-                  <span class="window-dot window-dot-y"></span>
-                  <span class="window-dot window-dot-g"></span>
-                </div>
-                <div class="window-body">
-                  <div class="ui-row short" style="animation-delay: 0.2s"></div>
-                  <div class="ui-row block" style="animation-delay: 0.1s"></div>
-                  <div class="ui-row wide" style="animation-delay: 0.4s"></div>
-                  <div class="ui-block-row">
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.3s"
-                    ></div>
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.5s"
-                    ></div>
-                  </div>
-                  <div class="ui-row med" style="animation-delay: 0.25s"></div>
-                  <div
-                    class="ui-row short"
-                    style="animation-delay: 0.45s"
-                  ></div>
-                </div>
-                <span class="window-project-label"
-                  >eGaming Hub — League Platform</span
-                >
-              </div>
-            </div>
-          </article>
 
-          <!-- ── Project 03 ── -->
-          <article class="project reveal">
-            <div class="project-info">
-              <div class="project-top">
-                <span class="project-num">03</span>
-                <span class="project-badge"
-                  >Full-Stack · Redis · WebSockets</span
+            <div
+              class="terminal-content"
+              id="terminal-body"
+              role="region"
+              aria-live="polite"
+            >
+              <div class="term-line">
+                <span class="term-prompt">ibrahim@thegreatstack-core:~$</span>
+                <span class="term-cmd"
+                  >ping -c 4 192.168.100.1 (starlink.gateway)</span
                 >
               </div>
-              <h3>Battlegrounds Tournament Platform</h3>
-              <dl class="case-study">
-                <div class="case-row">
-                  <dt>Problem</dt>
-                  <dd>
-                    Large-scale tournaments required manual bracket management —
-                    existing tools couldn't handle real-time participant loads.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Approach</dt>
-                  <dd>
-                    End-to-end orchestration: automated bracket generation, live
-                    match scoring, and real-time standings propagation.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Architecture</dt>
-                  <dd>
-                    Event-driven backend · Redis pub/sub · Knockout +
-                    Round-Robin scheduling · concurrency-optimised.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Outcome</dt>
-                  <dd>
-                    20+ simultaneous tournaments. Peak concurrent traffic
-                    handled with zero degradation.
-                  </dd>
-                </div>
-              </dl>
-              <a
-                href="https://battlegrounds.thegreatstack.com"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-ghost btn-sm"
-              >
-                Visit Live Site
-                <svg
-                  class="icon-sm"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
-              </a>
-            </div>
-            <div class="project-visual">
-              <div class="project-window">
-                <div class="window-bar">
-                  <span class="window-dot window-dot-r"></span>
-                  <span class="window-dot window-dot-y"></span>
-                  <span class="window-dot window-dot-g"></span>
-                </div>
-                <div class="window-body">
-                  <div class="ui-block-row">
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.1s"
-                    ></div>
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.3s"
-                    ></div>
-                  </div>
-                  <div class="ui-row wide" style="animation-delay: 0.2s"></div>
-                  <div class="ui-row block" style="animation-delay: 0.5s"></div>
-                  <div
-                    class="ui-row short"
-                    style="animation-delay: 0.15s"
-                  ></div>
-                  <div class="ui-row med" style="animation-delay: 0.4s"></div>
-                  <div class="ui-row wide" style="animation-delay: 0.35s"></div>
-                </div>
-                <span class="window-project-label"
-                  >Battlegrounds — Tournament Engine</span
+              <div class="term-line">
+                <span class="term-info"
+                  >PING starlink.gateway (192.168.100.1): 56 data bytes</span
                 >
               </div>
-            </div>
-          </article>
-
-          <!-- ── Project 04 ── -->
-          <article class="project project-alt reveal">
-            <div class="project-info">
-              <div class="project-top">
-                <span class="project-num">04</span>
-                <span class="project-badge"
-                  >Multi-tenant · Subdomain · Architecture</span
+              <div class="term-line">
+                64 bytes from 192.168.100.1: icmp_seq=0 ttl=64 time=24.182 ms
+                (Dishy Active · Elevation 68Â°)
+              </div>
+              <div class="term-line">
+                64 bytes from 192.168.100.1: icmp_seq=1 ttl=64 time=22.405 ms
+                (Signal Quality: 100% · No Obstructions)
+              </div>
+              <div class="term-line">
+                64 bytes from 192.168.100.1: icmp_seq=2 ttl=64 time=25.019 ms
+                (Carrier: Space Exploration Technologies)
+              </div>
+              <div class="term-line">
+                64 bytes from 192.168.100.1: icmp_seq=3 ttl=64 time=23.712 ms
+                (Dual-WAN Failover: STANDBY READY)
+              </div>
+              <div class="term-line">
+                <span class="term-success"
+                  >--- 192.168.100.1 ping statistics ---</span
                 >
               </div>
-              <h3>TheGreatStack</h3>
-              <dl class="case-study">
-                <div class="case-row">
-                  <dt>Problem</dt>
-                  <dd>
-                    Needed a central platform to host, showcase, and serve
-                    multiple sub-products under one unified ecosystem.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Approach</dt>
-                  <dd>
-                    Multi-tenant architecture with subdomain routing, shared
-                    authentication, and unified admin management.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Architecture</dt>
-                  <dd>
-                    Subdomain-based multi-tenancy · centralised identity ·
-                    shared services layer · independent CI/CD pipelines per
-                    product.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Outcome</dt>
-                  <dd>
-                    All four products on one infrastructure — reduced
-                    operational overhead, seamless cross-platform user
-                    management.
-                  </dd>
-                </div>
-              </dl>
-              <a
-                href="https://thegreatstack.com"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-ghost btn-sm"
-              >
-                Visit Live Site
-                <svg
-                  class="icon-sm"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
-              </a>
-            </div>
-            <div class="project-visual">
-              <div class="project-window">
-                <div class="window-bar">
-                  <span class="window-dot window-dot-r"></span>
-                  <span class="window-dot window-dot-y"></span>
-                  <span class="window-dot window-dot-g"></span>
-                </div>
-                <div class="window-body">
-                  <div class="ui-row wide" style="animation-delay: 0.3s"></div>
-                  <div class="ui-block-row">
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.1s"
-                    ></div>
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.5s"
-                    ></div>
-                  </div>
-                  <div class="ui-row short" style="animation-delay: 0.2s"></div>
-                  <div class="ui-row block" style="animation-delay: 0.4s"></div>
-                  <div class="ui-row med" style="animation-delay: 0.35s"></div>
-                  <div class="ui-row wide" style="animation-delay: 0.15s"></div>
-                </div>
-                <span class="window-project-label"
-                  >TheGreatStack — Digital Ecosystem</span
+              <div class="term-line">
+                <span class="term-success"
+                  >4 packets transmitted, 4 packets received, 0.0% packet
+                  loss</span
                 >
               </div>
-            </div>
-          </article>
-
-          <!-- ── Project 05 ── -->
-          <article class="project reveal">
-            <div class="project-info">
-              <div class="project-top">
-                <span class="project-num">05</span>
-                <span class="project-badge">React · Node.js · MySQL</span>
+              <div class="term-line">
+                round-trip min/avg/max = 22.405/23.829/25.019 ms · Throughput:
+                238 Mbps Down / 34 Mbps Up
               </div>
-              <h3>Inventory Management System</h3>
-              <dl class="case-study">
-                <div class="case-row">
-                  <dt>Problem</dt>
-                  <dd>
-                    Businesses struggled with stock tracking, purchase orders,
-                    and supplier management across disconnected spreadsheets and
-                    manual records.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Approach</dt>
-                  <dd>
-                    Full-featured inventory platform with real-time stock
-                    levels, automated low-stock alerts, supplier management, and
-                    detailed analytics dashboards.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Architecture</dt>
-                  <dd>
-                    React SPA · Node.js/Express REST API · MySQL relational
-                    schema · role-based access control.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Outcome</dt>
-                  <dd>
-                    Eliminated manual stock reconciliation — real-time
-                    visibility across products, suppliers, and purchase orders
-                    in one unified system.
-                  </dd>
-                </div>
-              </dl>
-              <a
-                href="https://inventory.thegreatstack.com"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-ghost btn-sm"
-              >
-                Visit Live Site
-                <svg
-                  class="icon-sm"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
-              </a>
-            </div>
-            <div class="project-visual">
-              <div class="project-window">
-                <div class="window-bar">
-                  <span class="window-dot window-dot-r"></span>
-                  <span class="window-dot window-dot-y"></span>
-                  <span class="window-dot window-dot-g"></span>
-                </div>
-                <div class="window-body">
-                  <div class="ui-block-row">
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.2s"
-                    ></div>
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.4s"
-                    ></div>
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.1s"
-                    ></div>
-                  </div>
-                  <div class="ui-row wide" style="animation-delay: 0.15s"></div>
-                  <div class="ui-row med" style="animation-delay: 0.3s"></div>
-                  <div class="ui-row short" style="animation-delay: 0.5s"></div>
-                  <div
-                    class="ui-row block"
-                    style="animation-delay: 0.25s"
-                  ></div>
-                </div>
-                <span class="window-project-label"
-                  >Inventory System — Stock Management</span
-                >
-              </div>
-            </div>
-          </article>
-
-          <!-- ── Project 06 ── -->
-          <article class="project project-alt reveal">
-            <div class="project-info">
-              <div class="project-top">
-                <span class="project-num">06</span>
-                <span class="project-badge">React · Node.js · MongoDB</span>
-              </div>
-              <h3>Workout Tracker</h3>
-              <dl class="case-study">
-                <div class="case-row">
-                  <dt>Problem</dt>
-                  <dd>
-                    Users struggled to track workouts, plan routines, and
-                    visualize fitness progress across fragmented apps and paper
-                    logs.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Approach</dt>
-                  <dd>
-                    Feature-complete workout tracking platform with a custom
-                    routine builder, history logs, progress analytics, and
-                    interactive charts.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Architecture</dt>
-                  <dd>
-                    React SPA · Node.js/Express API · MongoDB database · JWT
-                    auth flow.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Outcome</dt>
-                  <dd>
-                    Seamless workout tracking and progress visualization,
-                    improving user consistency and routine adherence.
-                  </dd>
-                </div>
-              </dl>
-              <a
-                href="https://workout.thegreatstack.com"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-ghost btn-sm"
-              >
-                Visit Live Site
-                <svg
-                  class="icon-sm"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
-              </a>
-            </div>
-            <div class="project-visual">
-              <div class="project-window">
-                <div class="window-bar">
-                  <span class="window-dot window-dot-r"></span>
-                  <span class="window-dot window-dot-y"></span>
-                  <span class="window-dot window-dot-g"></span>
-                </div>
-                <div class="window-body">
-                  <div class="ui-row wide" style="animation-delay: 0.1s"></div>
-                  <div class="ui-row block" style="animation-delay: 0.3s"></div>
-                  <div class="ui-block-row">
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.2s"
-                    ></div>
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.5s"
-                    ></div>
-                  </div>
-                  <div class="ui-row short" style="animation-delay: 0.4s"></div>
-                  <div class="ui-row med" style="animation-delay: 0.15s"></div>
-                </div>
-                <span class="window-project-label"
-                  >Workout Tracker — Fitness Platform</span
-                >
-              </div>
-            </div>
-          </article>
-
-          <!-- ── Project 07 ── -->
-          <article class="project reveal">
-            <div class="project-info">
-              <div class="project-top">
-                <span class="project-num">07</span>
-                <span class="project-badge">React · Laravel · MySQL</span>
-              </div>
-              <h3>Hotel Booking Platform</h3>
-              <dl class="case-study">
-                <div class="case-row">
-                  <dt>Problem</dt>
-                  <dd>
-                    Hospitality businesses needed a modern booking system with
-                    room management, guest profiles, and real-time availability
-                    — without expensive third-party SaaS fees.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Approach</dt>
-                  <dd>
-                    End-to-end hotel management solution with online booking,
-                    room availability calendar, guest check-in/out flows,
-                    invoicing, and an admin dashboard.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Architecture</dt>
-                  <dd>
-                    Laravel REST API · React SPA · MySQL · JWT auth · email
-                    notification pipeline.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Outcome</dt>
-                  <dd>
-                    Full property management system — from online reservation to
-                    checkout — replacing manual booking processes with a unified
-                    digital platform.
-                  </dd>
-                </div>
-              </dl>
-              <a
-                href="https://hotel.thegreatstack.com"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-ghost btn-sm"
-              >
-                Visit Live Site
-                <svg
-                  class="icon-sm"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
-              </a>
-            </div>
-            <div class="project-visual">
-              <div class="project-window">
-                <div class="window-bar">
-                  <span class="window-dot window-dot-r"></span>
-                  <span class="window-dot window-dot-y"></span>
-                  <span class="window-dot window-dot-g"></span>
-                </div>
-                <div class="window-body">
-                  <div class="ui-row wide" style="animation-delay: 0.3s"></div>
-                  <div class="ui-row short" style="animation-delay: 0.1s"></div>
-                  <div class="ui-block-row">
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.4s"
-                    ></div>
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.2s"
-                    ></div>
-                  </div>
-                  <div class="ui-row med" style="animation-delay: 0.5s"></div>
-                  <div
-                    class="ui-row block"
-                    style="animation-delay: 0.15s"
-                  ></div>
-                </div>
-                <span class="window-project-label"
-                  >Hotel Platform — Property Management</span
-                >
-              </div>
-            </div>
-          </article>
-
-          <!-- ── Project 08 ── -->
-          <article class="project project-alt reveal">
-            <div class="project-info">
-              <div class="project-top">
-                <span class="project-num">08</span>
-                <span class="project-badge">PHP · Laravel · MySQL</span>
-              </div>
-              <h3>NAWIA Zamfara Chapter</h3>
-              <dl class="case-study">
-                <div class="case-row">
-                  <dt>Problem</dt>
-                  <dd>
-                    Women farmers in Zamfara lacked an integrated platform to
-                    access sustainable agricultural resources, training
-                    programs, and direct market opportunities.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Approach</dt>
-                  <dd>
-                    Developed an empowerment portal featuring resource
-                    directories, weather updates, agricultural training guides,
-                    and community forum.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Architecture</dt>
-                  <dd>
-                    Full-Stack PHP/Laravel backend, responsive UI, MySQL
-                    relational schema, SMS-gateway alerts integration.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Outcome</dt>
-                  <dd>
-                    Facilitated access to training and agricultural resources
-                    for 500+ active state-wide female farmers.
-                  </dd>
-                </div>
-              </dl>
-              <a
-                href="https://nawiazamfarachapter.com.ng"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-ghost btn-sm"
-              >
-                Visit Live Site
-                <svg
-                  class="icon-sm"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
-              </a>
-            </div>
-            <div class="project-visual">
-              <div class="project-window">
-                <div class="window-bar">
-                  <span class="window-dot window-dot-r"></span>
-                  <span class="window-dot window-dot-y"></span>
-                  <span class="window-dot window-dot-g"></span>
-                </div>
-                <div class="window-body">
-                  <div class="ui-row short" style="animation-delay: 0.2s"></div>
-                  <div class="ui-row med" style="animation-delay: 0.1s"></div>
-                  <div class="ui-block-row">
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.3s"
-                    ></div>
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.5s"
-                    ></div>
-                  </div>
-                  <div class="ui-row wide" style="animation-delay: 0.4s"></div>
-                  <div
-                    class="ui-row block"
-                    style="animation-delay: 0.15s"
-                  ></div>
-                </div>
-                <span class="window-project-label"
-                  >NAWIA — Agricultural Platform</span
-                >
-              </div>
-            </div>
-          </article>
-
-          <!-- ── Project 09 ── -->
-          <article class="project reveal">
-            <div class="project-info">
-              <div class="project-top">
-                <span class="project-num">09</span>
-                <span class="project-badge">Laravel · PHP · MySQL</span>
-              </div>
-              <h3>Sarki Mudi Academy Portal</h3>
-              <dl class="case-study">
-                <div class="case-row">
-                  <dt>Problem</dt>
-                  <dd>
-                    Sarki Mudi Academy needed to transition manual student
-                    admissions, administrative records, and curriculum
-                    progression to a unified system.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Approach</dt>
-                  <dd>
-                    Created a comprehensive school management portal featuring
-                    online student enrolment, academic report cards, teacher
-                    grading interface, and curriculum calendar.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Architecture</dt>
-                  <dd>
-                    PHP/Laravel framework, MySQL database, role-based controls
-                    for administration, teachers, and parents.
-                  </dd>
-                </div>
-                <div class="case-row">
-                  <dt>Outcome</dt>
-                  <dd>
-                    Automated admissions and terminal reports for 300+
-                    primary/nursery students, reducing administrative overhead
-                    by 60%.
-                  </dd>
-                </div>
-              </dl>
-              <a
-                href="https://sarkimudiacademykamba.com.ng"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-ghost btn-sm"
-              >
-                Visit Live Site
-                <svg
-                  class="icon-sm"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg>
-              </a>
-            </div>
-            <div class="project-visual">
-              <div class="project-window">
-                <div class="window-bar">
-                  <span class="window-dot window-dot-r"></span>
-                  <span class="window-dot window-dot-y"></span>
-                  <span class="window-dot window-dot-g"></span>
-                </div>
-                <div class="window-body">
-                  <div class="ui-row med" style="animation-delay: 0.3s"></div>
-                  <div class="ui-block-row">
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.1s"
-                    ></div>
-                    <div
-                      class="ui-row block-half"
-                      style="animation-delay: 0.4s"
-                    ></div>
-                  </div>
-                  <div class="ui-row wide" style="animation-delay: 0.2s"></div>
-                  <div class="ui-row block" style="animation-delay: 0.5s"></div>
-                  <div
-                    class="ui-row short"
-                    style="animation-delay: 0.15s"
-                  ></div>
-                </div>
-                <span class="window-project-label"
-                  >Sarki Mudi Academy — Portal</span
-                >
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- ░░░ EXPERTISE ░░░ -->
-      <section class="expertise" id="expertise">
-        <div class="container">
-          <div class="section-header reveal">
-            <span class="eyebrow">Technical Expertise</span>
-            <h2>Web &amp; mobile, full stack,<br />top to bottom.</h2>
-          </div>
-          <div class="expertise-grid">
-            <div class="expertise-card reveal">
-              <h3>Frontend Engineering</h3>
-              <ul class="tech-list">
-                <li>React &amp; Next.js</li>
-                <li>Vue.js 3</li>
-                <li>TypeScript</li>
-                <li>Tailwind CSS</li>
-                <li>Responsive &amp; Accessible UI</li>
-              </ul>
-            </div>
-            <div class="expertise-card reveal" style="--delay: 0.08s">
-              <h3>Backend Architecture</h3>
-              <ul class="tech-list">
-                <li>Node.js &amp; Express.js</li>
-                <li>Laravel (PHP)</li>
-                <li>REST &amp; GraphQL APIs</li>
-                <li>WebSockets / Socket.io</li>
-                <li>Event-Driven Systems</li>
-              </ul>
-            </div>
-            <div class="expertise-card reveal" style="--delay: 0.04s">
-              <h3>Database Systems</h3>
-              <ul class="tech-list">
-                <li>MySQL &amp; PostgreSQL</li>
-                <li>MongoDB</li>
-                <li>Redis</li>
-                <li>Schema Design &amp; Migrations</li>
-                <li>Query Optimisation</li>
-              </ul>
-            </div>
-            <div class="expertise-card reveal" style="--delay: 0.12s">
-              <h3>Deployment &amp; DevOps</h3>
-              <ul class="tech-list">
-                <li>AWS / cPanel / VPS</li>
-                <li>Docker &amp; GitHub Actions</li>
-                <li>Nginx &amp; SSL Setup</li>
-                <li>Subdomain &amp; DNS Management</li>
-                <li>Performance Monitoring</li>
-              </ul>
-            </div>
-            <!-- React Native / Mobile -->
-            <div class="expertise-card reveal" style="--delay: 0.16s">
-              <h3>Mobile Engineering</h3>
-              <ul class="tech-list">
-                <li>React Native</li>
-                <li>Expo</li>
-                <li>Cross-platform iOS &amp; Android</li>
-                <li>Native APIs &amp; Device Features</li>
-                <li>App Store &amp; Play Store Deployment</li>
-              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ░░░ PHILOSOPHY ░░░ -->
-      <section class="philosophy" id="philosophy">
-        <div class="container">
-          <div class="philosophy-inner reveal">
-            <span class="eyebrow">Engineering Philosophy</span>
-            <blockquote>
-              "I write code for the engineer who reads it six months from now —
-              often, that's me. Scalability isn't just about handling load. It's
-              about building systems that remain comprehensible, extensible, and
-              honest under pressure."
-            </blockquote>
-            <p class="philosophy-meta">
-              Clean architecture &nbsp;·&nbsp; Purposeful abstractions
-              &nbsp;·&nbsp; Performance by design
+      <!-- â–‘â–‘â–‘ TECHNOLOGY STACK SECTION â–‘â–‘â–‘ -->
+      <section class="section tech-section" id="technology">
+        <div class="page-container">
+          <div class="section-header">
+            <div class="section-header-text">
+              <span class="section-kicker">06 / TECHNICAL TOOLKIT</span>
+              <h2 class="section-title">Technology Stack</h2>
+            </div>
+            <p class="section-desc">
+              Organized technical proficiencies across frontend, backend,
+              databases, infrastructure, networking, security, and developer
+              tools.
             </p>
-            <div class="philosophy-pills">
-              <span class="pill">Maintainable Code</span>
-              <span class="pill">Scalable Systems</span>
-              <span class="pill">Clean APIs</span>
-              <span class="pill">Performance First</span>
-              <span class="pill">Team-friendly Abstractions</span>
+          </div>
+
+          <div class="tech-matrix">
+            <div class="tech-category-card">
+              <h4 class="tech-category-name">Frontend</h4>
+              <p class="tech-category-list">
+                JavaScript (ES6+) · TypeScript · React · Next.js · Vue.js 3 ·
+                HTML5 · Semantic CSS3 · Tailwind CSS
+              </p>
+            </div>
+
+            <div class="tech-category-card">
+              <h4 class="tech-category-name">Backend</h4>
+              <p class="tech-category-list">
+                Node.js · Express · Laravel (PHP) · Python · REST APIs ·
+                WebSockets · Microservices · JWT / RBAC
+              </p>
+            </div>
+
+            <div class="tech-category-card">
+              <h4 class="tech-category-name">Databases</h4>
+              <p class="tech-category-list">
+                MySQL · PostgreSQL · SQLite · MongoDB · Redis · Relational
+                Schemas · Indexing &amp; Query Optimization
+              </p>
+            </div>
+
+            <div class="tech-category-card">
+              <h4 class="tech-category-name">Cloud &amp; Infrastructure</h4>
+              <p class="tech-category-list">
+                Linux (Ubuntu / Debian) · Nginx Reverse Proxy · Apache · Docker
+                · VPS / cPanel · Git &amp; GitHub
+              </p>
+            </div>
+
+            <div class="tech-category-card">
+              <h4 class="tech-category-name">Networking</h4>
+              <p class="tech-category-list">
+                Cisco Catalyst Switches · MikroTik RouterOS · Starlink Business
+                · 802.1Q VLANs · QoS · IP CCTV · Cat6/Fiber
+              </p>
+            </div>
+
+            <div class="tech-category-card">
+              <h4 class="tech-category-name">Cybersecurity</h4>
+              <p class="tech-category-list">
+                Role-Based Access Control · TLS/SSL Configuration · Firewall
+                Rules · Network Hardening · Port Auditing
+              </p>
+            </div>
+
+            <div class="tech-category-card">
+              <h4 class="tech-category-name">Mobile &amp; Data</h4>
+              <p class="tech-category-list">
+                React Native · Expo · Android &amp; iOS · Python (Pandas, NumPy)
+                · Business Intelligence Dashboards
+              </p>
+            </div>
+
+            <div class="tech-category-card">
+              <h4 class="tech-category-name">Developer Tools</h4>
+              <p class="tech-category-list">
+                Postman · VS Code · Linux CLI · Bash Scripting · Wireshark · Git
+                Version Control · ESC/POS Hardware APIs
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ░░░ CONTACT ░░░ -->
-      <section class="contact" id="contact">
-        <div class="container">
-          <div class="contact-inner reveal">
-            <span class="eyebrow">Contact</span>
-            <h2>Let's build scalable digital infrastructure together.</h2>
-            <p>
-              Fresh B.Sc. Computer Science graduate &amp; Data Scientist — open
-              to engineering roles, technical leadership, and high-impact
-              collaborations. 9+ live platforms shipped. Based in Nigeria —
-              available for remote work worldwide.
-            </p>
-            <div class="contact-actions">
-              <a
-                href="mailto:itechkebbinigeria@gmail.com"
-                class="btn btn-primary"
-                >itechkebbinigeria@gmail.com</a
-              >
-              <button onclick="openCV()" class="btn btn-ghost">View CV</button>
+      <!-- â–‘â–‘â–‘ EXPERIENCE & JOURNEY SECTION â–‘â–‘â–‘ -->
+      <section class="section experience-section" id="experience">
+        <div class="page-container">
+          <div class="section-header">
+            <div class="section-header-text">
+              <span class="section-kicker">07 / TIMELINE &amp; BACKGROUND</span>
+              <h2 class="section-title">Experience &amp; Milestones</h2>
             </div>
-            <div class="social-links">
-              <a
-                href="https://github.com/itechue"
-                target="_blank"
-                rel="noopener"
-              >
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
+            <p class="section-desc">
+              Academic foundation and real-world technology deployments across
+              software systems, networks, and systems engineering.
+            </p>
+          </div>
+
+          <div class="timeline-container">
+            <div class="timeline-entry">
+              <div class="timeline-time">
+                <span class="time-year">2026</span>
+                <span class="time-tag">Academic Credential</span>
+              </div>
+              <div class="timeline-body">
+                <h3 class="timeline-role">
+                  Bachelor of Science (B.Sc.) in Computer Science
+                </h3>
+                <span class="timeline-org"
+                  >Federal University, Birnin Kebbi (FUBK)</span
                 >
-                  <path
-                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
-                  />
-                </svg>
-                GitHub
-              </a>
-              <span class="sep"></span>
-              <a
-                href="https://www.linkedin.com/in/ibrahim-isah-bawa"
-                target="_blank"
-                rel="noopener"
-              >
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
+                <p class="timeline-text">
+                  Completed rigorous degree program with focus on Algorithms
+                  &amp; Data Structures, Operating Systems, Computer Networks,
+                  Database Architecture, Systems Analysis, and Cybersecurity
+                  Principles.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-entry">
+              <div class="timeline-time">
+                <span class="time-year">2025 â€“ Present</span>
+                <span class="time-tag">Production Platform</span>
+              </div>
+              <div class="timeline-body">
+                <h3 class="timeline-role">
+                  Lead Full-Stack Software Engineer &amp; Systems Architect
+                </h3>
+                <span class="timeline-org"
+                  >Sunglow Pharmacy Platform (sunglowpharmacy.com.ng)</span
                 >
-                  <path
-                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                  />
-                </svg>
-                LinkedIn
-              </a>
-              <span class="sep"></span>
-              <a
-                href="https://x.com/thegreatstack"
-                target="_blank"
-                rel="noopener"
-                >Twitter / X</a
-              >
+                <p class="timeline-text">
+                  Architected, coded, and deployed the complete pharmacy
+                  management and POS system. Implemented barcode scanner
+                  integrations, thermal receipt printing, automated expiry
+                  alerts, and relational database auditing. Serving daily
+                  commercial sales operations.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-entry">
+              <div class="timeline-time">
+                <span class="time-year">2024 â€“ Present</span>
+                <span class="time-tag">Infrastructure</span>
+              </div>
+              <div class="timeline-body">
+                <h3 class="timeline-role">
+                  Enterprise Network &amp; Infrastructure Engineer
+                </h3>
+                <span class="timeline-org"
+                  >Commercial &amp; Enterprise Facilities</span
+                >
+                <p class="timeline-text">
+                  Conducted physical installation and configuration of
+                  commercial Starlink Business satellite dishes, Cisco Catalyst
+                  managed switches, MikroTik dual-WAN routing, and 4K IP CCTV
+                  surveillance networks with dedicated NVR storage arrays.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-entry">
+              <div class="timeline-time">
+                <span class="time-year">2023 â€“ Present</span>
+                <span class="time-tag">Consulting</span>
+              </div>
+              <div class="timeline-body">
+                <h3 class="timeline-role">
+                  Software Developer &amp; Technology Consultant
+                </h3>
+                <span class="timeline-org"
+                  >Independent Practice / TheGreatStack</span
+                >
+                <p class="timeline-text">
+                  Delivered custom web applications, institutional school
+                  management systems (Sarki Mudi Academy), agricultural
+                  empowerment platforms (NAWIA Zamfara), healthcare record tools
+                  (Horizon Hope), and technical consulting for enterprise
+                  clients.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- â–‘â–‘â–‘ ENGINEERING PHILOSOPHY SECTION â–‘â–‘â–‘ -->
+      <section class="section philosophy-section" id="philosophy">
+        <div class="page-container">
+          <div class="section-header">
+            <div class="section-header-text">
+              <span class="section-kicker">08 / CORE PRINCIPLES</span>
+              <h2 class="section-title">Engineering Philosophy</h2>
+            </div>
+            <p class="section-desc">
+              Guiding technical standards applied across every line of code and
+              every physical network installation.
+            </p>
+          </div>
+
+          <div class="philosophy-grid">
+            <div class="philosophy-card">
+              <span class="card-num">01</span>
+              <h3 class="card-headline">Reliability Over Novelty</h3>
+              <p class="card-body">
+                Systems must perform deterministically under adverse conditions.
+                I favor proven architecture, clear data modeling, and
+                fault-tolerant network topologies over fleeting tech trends.
+              </p>
+            </div>
+
+            <div class="philosophy-card">
+              <span class="card-num">02</span>
+              <h3 class="card-headline">Full-Stack Comprehension</h3>
+              <p class="card-body">
+                True software resilience occurs when the engineer understands
+                the complete stack â€” from the frontend DOM event down through
+                the server OS, the switch port, and the physical transmission
+                medium.
+              </p>
+            </div>
+
+            <div class="philosophy-card">
+              <span class="card-num">03</span>
+              <h3 class="card-headline">Security by Design</h3>
+              <p class="card-body">
+                Access control, encryption, least-privilege configurations, and
+                network segmentation are foundational requirements from day one,
+                never post-deployment afterthoughts.
+              </p>
+            </div>
+
+            <div class="philosophy-card">
+              <span class="card-num">04</span>
+              <h3 class="card-headline">Operational Pragmatism</h3>
+              <p class="card-body">
+                Technology exists to eliminate manual friction, secure business
+                continuity, and solve tangible human problems with measured,
+                high-yield engineering solutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Philosophy Badges / Engineering Standards -->
+          <div class="philosophy-pills-row">
+            <span class="ph-pill">Maintainable Code</span>
+            <span class="ph-pill">Scalable Systems</span>
+            <span class="ph-pill">Clean APIs</span>
+            <span class="ph-pill">Performance First</span>
+            <span class="ph-pill">Zero Downtime Architecture</span>
+            <span class="ph-pill">Team-Friendly Abstractions</span>
+            <span class="ph-pill">Deterministic Networks</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- â–‘â–‘â–‘ CONTACT SECTION â–‘â–‘â–‘ -->
+      <section class="section contact-section" id="contact">
+        <div class="page-container">
+          <div class="contact-card">
+            <div class="contact-header">
+              <span class="section-kicker">GET IN TOUCH</span>
+              <h2 class="contact-headline">
+                Letâ€™s Build Something That Matters.
+              </h2>
+              <p class="contact-subhead">
+                Available for full-stack software development, systems
+                architecture, enterprise network engineering (Cisco / MikroTik /
+                Starlink / CCTV), and technical consulting. Open to contracts,
+                full-time positions, and on-site or remote deployments.
+              </p>
+            </div>
+
+            <div class="contact-body-grid">
+              <div class="contact-channels">
+                <div class="channel-item">
+                  <span class="channel-label">Direct Email</span>
+                  <a
+                    href="mailto:isahibrahimbawakamba@gmail.com"
+                    class="channel-link"
+                  >
+                    isahibrahimbawakamba@gmail.com
+                  </a>
+                </div>
+
+                <div class="channel-item">
+                  <span class="channel-label">WhatsApp Direct</span>
+                  <a
+                    href="https://wa.me/2349012002058?text=Hello%20Ibrahim%2C%20I%20am%20interested%20in%20your%20software%20and%20network%20engineering%20services."
+                    target="_blank"
+                    rel="noopener"
+                    class="channel-link"
+                  >
+                    +234 901 200 2058
+                  </a>
+                </div>
+
+                <div class="channel-item">
+                  <span class="channel-label">Location &amp; Availability</span>
+                  <span class="channel-text"
+                    >Nigeria · Remote Worldwide · On-site by arrangement</span
+                  >
+                </div>
+
+                <div class="channel-socials">
+                  <a
+                    href="https://github.com/itechue"
+                    target="_blank"
+                    rel="noopener"
+                    class="social-text-link"
+                  >
+                    GitHub &nearr;
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/ibrahim-isah-bawa"
+                    target="_blank"
+                    rel="noopener"
+                    class="social-text-link"
+                  >
+                    LinkedIn &nearr;
+                  </a>
+                  <a
+                    href="https://x.com/thegreatstack"
+                    target="_blank"
+                    rel="noopener"
+                    class="social-text-link"
+                  >
+                    Twitter / X &nearr;
+                  </a>
+                </div>
+
+                <div
+                  class="channel-cv-action"
+                  style="display: flex; flex-direction: column; gap: 0.65rem"
+                >
+                  <button
+                    onclick="openCV()"
+                    class="btn btn-secondary btn-block"
+                  >
+                    View Full Curriculum Vitae
+                  </button>
+                  <a
+                    href="cv.html"
+                    target="_blank"
+                    class="btn btn-secondary btn-block"
+                  >
+                    Open Standalone CV Page &nearr;
+                  </a>
+                  <a
+                    href="assets/whatsapp-status-flyer.jpg"
+                    download="Ibrahim-Isah-Bawa-Flyer.jpg"
+                    class="btn btn-primary btn-block"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      gap: 0.5rem;
+                    "
+                  >
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                      <polyline points="7 10 12 15 17 10" />
+                      <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    Download WhatsApp Status Flyer
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-form-container">
+                <form
+                  id="contact-form"
+                  class="contact-form"
+                  onsubmit="event.preventDefault(); handleContactSubmit();"
+                >
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="contact-name" class="form-label"
+                        >Your Name</label
+                      >
+                      <input
+                        type="text"
+                        id="contact-name"
+                        class="form-input"
+                        placeholder="e.g. Dr. Adamu Bello"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="contact-email" class="form-label"
+                        >Email Address</label
+                      >
+                      <input
+                        type="email"
+                        id="contact-email"
+                        class="form-input"
+                        placeholder="e.g. adamu@enterprise.com"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-subject" class="form-label"
+                      >Project / Service Interest</label
+                    >
+                    <select id="contact-subject" class="form-input" required>
+                      <option value="software">
+                        Full-Stack Software Development / POS
+                      </option>
+                      <option value="network">
+                        Enterprise Networking (Cisco / MikroTik / Starlink)
+                      </option>
+                      <option value="cctv">
+                        IP CCTV Surveillance &amp; Physical Security
+                      </option>
+                      <option value="security">
+                        Cybersecurity &amp; System Hardening
+                      </option>
+                      <option value="data">
+                        Data Science &amp; Business Intelligence
+                      </option>
+                      <option value="consulting">
+                        Technology Consulting / Other
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-message" class="form-label"
+                      >Message Details</label
+                    >
+                    <textarea
+                      id="contact-message"
+                      rows="4"
+                      class="form-input form-textarea"
+                      placeholder="Describe your system requirements, timeline, or scope of work..."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-block"
+                    id="form-submit-btn"
+                  >
+                    Start a Conversation
+                  </button>
+
+                  <div
+                    id="form-feedback"
+                    class="form-feedback"
+                    aria-live="polite"
+                  ></div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- ░░░ CV MODAL ░░░ -->
-    <div id="cv-modal" class="modal-overlay" aria-hidden="true">
+    <!-- â–‘â–‘â–‘ FLOATING MOBILE BOTTOM NAVIGATION BAR â–‘â–‘â–‘ -->
+    <nav
+      class="mobile-bottom-nav"
+      id="mobile-bottom-nav"
+      aria-label="Mobile Navigation"
+    >
+      <a
+        href="#home"
+        class="mobile-tab active"
+        data-nav="home"
+        aria-label="Home section"
+      >
+        <svg
+          class="mobile-tab-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" />
+        </svg>
+        <span class="mobile-tab-label">Home</span>
+      </a>
+
+      <a
+        href="#about"
+        class="mobile-tab"
+        data-nav="about"
+        aria-label="About section"
+      >
+        <svg
+          class="mobile-tab-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        <span class="mobile-tab-label">About</span>
+      </a>
+
+      <a
+        href="#projects"
+        class="mobile-tab"
+        data-nav="projects"
+        aria-label="Work and projects section"
+      >
+        <svg
+          class="mobile-tab-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+          <line x1="8" y1="21" x2="16" y2="21" />
+          <line x1="12" y1="17" x2="12" y2="21" />
+        </svg>
+        <span class="mobile-tab-label">Work</span>
+      </a>
+
+      <a
+        href="#expertise"
+        class="mobile-tab"
+        data-nav="expertise"
+        aria-label="Areas of expertise"
+      >
+        <svg
+          class="mobile-tab-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="16 18 22 12 16 6" />
+          <polyline points="8 6 2 12 8 18" />
+        </svg>
+        <span class="mobile-tab-label">Skills</span>
+      </a>
+
+      <a
+        href="#contact"
+        class="mobile-tab"
+        data-nav="contact"
+        aria-label="Contact and conversation"
+      >
+        <svg
+          class="mobile-tab-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+          />
+        </svg>
+        <span class="mobile-tab-label">Contact</span>
+      </a>
+    </nav>
+
+    <!-- â–‘â–‘â–‘ MINIMAL EDITORIAL FOOTER â–‘â–‘â–‘ -->
+    <footer class="site-footer">
+      <div class="page-container footer-content">
+        <div class="footer-left">
+          <span class="footer-brand">Ibrahim Isah Bawa</span>
+          <span class="footer-tagline">
+            Computer Scientist · Software Engineer &amp; Enterprise Network
+            Engineer
+          </span>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#projects">Projects</a>
+          <a href="#network">Networks</a>
+          <a href="#terminal">Terminal</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+          <a
+            href="cv.html"
+            target="_blank"
+            style="color: var(--accent-light, #f59e0b)"
+            >Curriculum Vitae</a
+          >
+          <a
+            href="assets/whatsapp-status-flyer.jpg"
+            download="Ibrahim-Isah-Bawa-Flyer.jpg"
+            style="color: var(--accent-light, #f59e0b)"
+            >WhatsApp Flyer</a
+          >
+        </nav>
+
+        <div class="footer-right">
+          <span class="footer-copy"
+            >Â© 2026 Ibrahim Isah Bawa. All rights reserved.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- â–‘â–‘â–‘ CV MODAL â–‘â–‘â–‘ -->
+    <div
+      id="cv-modal"
+      class="modal-overlay"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="cv-modal-title"
+    >
       <div class="modal-container">
         <div class="modal-header">
           <div class="modal-controls">
-            <span class="ctrl close-ctrl" onclick="closeCV()">&times;</span>
+            <button
+              class="modal-close-btn"
+              onclick="closeCV()"
+              aria-label="Close CV modal"
+            >
+              &times;
+            </button>
           </div>
-          <div class="modal-actions">
-            <button class="btn btn-sm btn-ghost" onclick="window.print()">
-              Print to PDF
+          <div
+            class="modal-actions"
+            style="
+              display: flex;
+              gap: 0.5rem;
+              align-items: center;
+              flex-wrap: wrap;
+            "
+          >
+            <a href="cv.html" target="_blank" class="btn btn-sm btn-secondary">
+              Open Fullpage CV &nearr;
+            </a>
+            <a
+              href="assets/whatsapp-status-flyer.jpg"
+              download="Ibrahim-Isah-Bawa-Flyer.jpg"
+              class="btn btn-sm btn-secondary"
+            >
+              WhatsApp Flyer &darr;
+            </a>
+            <button class="btn btn-sm btn-primary" onclick="window.print()">
+              Print / Save PDF
             </button>
           </div>
         </div>
@@ -1283,137 +2431,148 @@
         <div class="cv-document" id="cv-content">
           <header class="cv-header">
             <div class="cv-id">
-              <h1>Ibrahim Isah Bawa</h1>
-              <p class="cv-title">Full-Stack Engineer &amp; Data Scientist</p>
+              <h1 id="cv-modal-title">Ibrahim Isah Bawa</h1>
+              <p class="cv-title">
+                Computer Scientist · Full-Stack Software Engineer &amp;
+                Enterprise Network Engineer
+              </p>
             </div>
             <div class="cv-meta">
-              <p>itechkebbinigeria@gmail.com</p>
+              <p>isahibrahimbawakamba@gmail.com</p>
               <p>+234 901 200 2058</p>
-              <p>Nigeria · Remote</p>
+              <p>Nigeria · Available Worldwide</p>
             </div>
           </header>
 
           <section class="cv-section">
             <h2 class="cv-section-title">Professional Summary</h2>
             <p>
-              Results-oriented Full-Stack Engineer, Data Scientist and recent
-              B.Sc. Computer Science graduate (Federal University, Birnin Kebbi)
-              with a strong foundation in building scalable web platforms and
-              digital ecosystems. Expert in MERN stack and Laravel, with
-              additional expertise in data analysis, predictive modeling, and
-              React Native. 9+ live production platforms shipped — spanning
-              healthcare, identity systems, gaming, agriculture, education,
-              hospitality, and inventory management. Passionate about clean
-              architecture, performance optimization, and solving complex
-              system-level challenges.
+              Results-oriented Computer Scientist and Technology Professional
+              holding a Bachelor of Science (B.Sc.) in Computer Science from
+              Federal University, Birnin Kebbi. Combines full-stack software
+              development expertise with hands-on enterprise infrastructure
+              engineering. Proven track record architecting 10+ live platforms
+              (including the flagship Sunglow Pharmacy Management &amp; POS
+              System live at sunglowpharmacy.com.ng, Horizon Hope Clinic
+              Platform, and TheGreatStack ecosystem) and deploying
+              mission-critical network backbones (Cisco Catalyst and MikroTik
+              core routing/switching, Starlink Business commercial satellite
+              arrays, 4K IP CCTV surveillance matrices, and structured fiber
+              cabling). Dedicated to high availability, zero-downtime
+              architecture, and strict security posture.
             </p>
           </section>
 
           <section class="cv-section">
-            <h2 class="cv-section-title">Education</h2>
+            <h2 class="cv-section-title">Education &amp; Credentials</h2>
             <div class="cv-item">
               <div class="cv-item-header">
-                <h3>
-                  B.Sc. Computer Science
-                  <span class="badge badge-grad">Graduated 🎓</span>
-                </h3>
-                <span class="cv-date">2026</span>
+                <h3>Bachelor of Science (B.Sc.) in Computer Science</h3>
+                <span class="cv-date">Graduated 2026</span>
               </div>
-              <p class="cv-sub">Federal University, Birnin Kebbi</p>
+              <p class="cv-sub">Federal University, Birnin Kebbi (FUBK)</p>
+              <p class="cv-notes">
+                Core coursework: Data Structures &amp; Algorithms, Database
+                Systems, Computer Networks &amp; Security, Operating Systems,
+                Software Engineering, Systems Analysis.
+              </p>
             </div>
             <div class="cv-item">
               <div class="cv-item-header">
-                <h3>Data Science Program</h3>
+                <h3>Enterprise Network Engineering &amp; Infrastructure</h3>
+                <span class="cv-date">Certified</span>
+              </div>
+              <p class="cv-sub">
+                Enterprise routing &amp; switching (Cisco / MikroTik), Starlink
+                Business satellite deployments, and IP CCTV surveillance
+                matrices.
+              </p>
+            </div>
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <h3>Data Science &amp; Systems Program</h3>
                 <span class="cv-date">Completed</span>
               </div>
               <p class="cv-sub">
-                Specialized training in data analysis and predictive modeling.
+                Specialized training in data analysis, predictive modeling, and
+                business intelligence.
               </p>
             </div>
           </section>
 
           <section class="cv-section">
-            <h2 class="cv-section-title">Selected Projects</h2>
+            <h2 class="cv-section-title">
+              Key Projects &amp; Infrastructure Deployments
+            </h2>
             <div class="cv-item">
               <div class="cv-item-header">
-                <h3>TheGreatStack</h3>
-                <span class="cv-date">Foundational Product</span>
+                <h3>Sunglow Pharmacy Management &amp; POS System</h3>
+                <span class="cv-date"
+                  >Live Production (sunglowpharmacy.com.ng)</span
+                >
+              </div>
+              <p>
+                Full-featured dispensary &amp; POS web application with barcode
+                checkout, automated batch/lot expiry tracking, low-stock reorder
+                triggers, and sales audit reporting.
+              </p>
+            </div>
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <h3>Enterprise Starlink Business &amp; Multi-WAN Failover</h3>
+                <span class="cv-date">Commercial Deployment</span>
+              </div>
+              <p>
+                Commercial rooftop satellite dish integration with MikroTik
+                dual-WAN bonding gateway, low-loss weatherized Cat6A runs, and
+                sub-second automatic failover ensuring 99.98% uptime.
+              </p>
+            </div>
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <h3>Cisco &amp; MikroTik Core VLAN Infrastructure</h3>
+                <span class="cv-date">Network Segmentation</span>
+              </div>
+              <p>
+                Segmented switching fabric across 48+ ports with 802.1Q
+                multi-VLAN isolation (POS, CCTV, Management, Staff, Guest
+                Wi-Fi), ACL firewall filtering, and QoS packet queuing.
+              </p>
+            </div>
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <h3>Enterprise IP CCTV Surveillance Matrix</h3>
+                <span class="cv-date">Security Grid</span>
+              </div>
+              <p>
+                PoE-powered 4K surveillance network with dedicated NVR RAID-5
+                array, AI perimeter intruder alert engine, and secure encrypted
+                remote RTSP/WireGuard access.
+              </p>
+            </div>
+            <div class="cv-item">
+              <div class="cv-item-header">
+                <h3>TheGreatStack Digital Ecosystem</h3>
+                <span class="cv-date"
+                  >Foundational Product (thegreatstack.com)</span
+                >
               </div>
               <p>
                 Multi-tenant ecosystem with subdomain routing and unified
-                identity management hosting several sub-products.
+                identity management hosting Horizon Hope, eGaming Hub,
+                Battlegrounds, Inventory, Workout, and Hotel platforms.
               </p>
             </div>
             <div class="cv-item">
               <div class="cv-item-header">
-                <h3>Horizon Hope</h3>
-                <span class="cv-date">Healthcare System</span>
+                <h3>Sarki Mudi Academy &amp; NAWIA Zamfara Portals</h3>
+                <span class="cv-date">Institutional &amp; Community ERP</span>
               </div>
               <p>
-                Production-level healthcare platform managing patient data and
-                clinic scheduling for improved coordination.
-              </p>
-            </div>
-            <div class="cv-item">
-              <div class="cv-item-header">
-                <h3>Battlegrounds</h3>
-                <span class="cv-date">Tournament Engine</span>
-              </div>
-              <p>
-                Automated tournament orchestration platform handling real-time
-                match scoring and standings for competitive gaming.
-              </p>
-            </div>
-            <div class="cv-item">
-              <div class="cv-item-header">
-                <h3>Inventory Management System</h3>
-                <span class="cv-date">Business Operations</span>
-              </div>
-              <p>
-                Full-featured stock and supplier management platform with
-                real-time inventory tracking, automated alerts, and analytics
-                dashboards.
-              </p>
-            </div>
-            <div class="cv-item">
-              <div class="cv-item-header">
-                <h3>Workout Tracker</h3>
-                <span class="cv-date">Fitness &amp; Health</span>
-              </div>
-              <p>
-                MERN stack platform providing workout planning, history logging,
-                and progress visualization.
-              </p>
-            </div>
-            <div class="cv-item">
-              <div class="cv-item-header">
-                <h3>Hotel Booking Platform</h3>
-                <span class="cv-date">Hospitality Tech</span>
-              </div>
-              <p>
-                End-to-end property management system with online reservations,
-                room availability calendar, guest check-in/out flows, and
-                automated invoicing.
-              </p>
-            </div>
-            <div class="cv-item">
-              <div class="cv-item-header">
-                <h3>NAWIA Zamfara Chapter</h3>
-                <span class="cv-date">Agritech Portal</span>
-              </div>
-              <p>
-                Agricultural resources directory, weather tracking alerts, and
-                training content delivery portal empowering 500+ women farmers.
-              </p>
-            </div>
-            <div class="cv-item">
-              <div class="cv-item-header">
-                <h3>Sarki Mudi Academy Portal</h3>
-                <span class="cv-date">Edtech Administration</span>
-              </div>
-              <p>
-                Integrated academic portal covering online student enrollment,
-                grading systems, reporting cards, and administrative records.
+                Production academic records and student grading portal
+                (sarkimudiacademykamba.com.ng) and state-wide agricultural
+                resource platform for 500+ female farmers
+                (nawiazamfarachapter.com.ng).
               </p>
             </div>
           </section>
@@ -1422,34 +2581,38 @@
             <h2 class="cv-section-title">Technical Expertise</h2>
             <div class="cv-grid">
               <div class="cv-grid-col">
-                <strong>Frontend</strong>
-                <p>React, Next.js, Vue, TypeScript, Tailwind, React Native</p>
+                <strong>Software &amp; Web</strong>
+                <p>
+                  React, Node.js, Express, Laravel (PHP), TypeScript, Python,
+                  HTML5, CSS3, REST APIs, WebSockets
+                </p>
               </div>
               <div class="cv-grid-col">
-                <strong>Backend</strong>
-                <p>Node.js, Express, Laravel (PHP), REST, WebSockets</p>
+                <strong>Networks &amp; Infra</strong>
+                <p>
+                  Cisco Catalyst, MikroTik RouterOS, Starlink Business, 802.1Q
+                  VLANs, IP CCTV, Cat6/Fiber
+                </p>
               </div>
               <div class="cv-grid-col">
-                <strong>Storage</strong>
-                <p>PostgreSQL, MySQL, MongoDB, Redis</p>
+                <strong>Databases &amp; DevOps</strong>
+                <p>
+                  MySQL, PostgreSQL, SQLite, MongoDB, Linux SysAdmin, Nginx,
+                  Docker, Git
+                </p>
               </div>
               <div class="cv-grid-col">
-                <strong>DevOps</strong>
-                <p>AWS, Docker, GitHub Actions, Nginx, Linux</p>
+                <strong>Cybersecurity &amp; Data</strong>
+                <p>
+                  RBAC, TLS/SSL, Firewall Hardening, Syslog Auditing, Python
+                  (Pandas/NumPy), Data Analysis
+                </p>
               </div>
             </div>
           </section>
         </div>
       </div>
     </div>
-
-    <!-- ░░░ FOOTER ░░░ -->
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span>© 2026 Ibrahim Isah Bawa</span>
-        <span>Built with purpose. Deployed with precision.</span>
-      </div>
-    </footer>
 
     <script src="script.js"></script>
   </body>

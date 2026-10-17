@@ -1,0 +1,839 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae â€” Ibrahim Isah Bawa | Computer Scientist & Infrastructure Engineer</title>
+  <meta name="description" content="Professional Curriculum Vitae of Ibrahim Isah Bawa. B.Sc. Computer Science graduate, Full-Stack Software Engineer, and Enterprise Network Engineer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d0f12;
+      --paper: #ffffff;
+      --paper-border: #e2e8f0;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-light: #64748b;
+      --accent: #b45309;
+      --accent-dark: #92400e;
+      --accent-soft: #fef3c7;
+      --dark-card: #14181f;
+      --dark-border: #232936;
+      --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: #f1f5f9;
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Action Bar for web viewing */
+    .cv-action-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0d0f12;
+      border-bottom: 1px solid #232936;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .cv-bar-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .cv-bar-brand {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #f8fafc;
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+
+    .cv-bar-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      background: rgba(180, 83, 9, 0.2);
+      color: #f59e0b;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 0.2rem 0.6rem;
+      border-radius: 9999px;
+    }
+
+    .cv-bar-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+    }
+
+    .cv-btn {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.45rem 0.95rem;
+      border-radius: 6px;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .cv-btn-back {
+      background: transparent;
+      color: #94a3b8;
+      border-color: #334155;
+    }
+    .cv-btn-back:hover {
+      background: #1e293b;
+      color: #f8fafc;
+    }
+
+    .cv-btn-flyer {
+      background: rgba(180, 83, 9, 0.15);
+      color: #f59e0b;
+      border-color: rgba(245, 158, 11, 0.35);
+    }
+    .cv-btn-flyer:hover {
+      background: #f59e0b;
+      color: #000000;
+    }
+
+    .cv-btn-print {
+      background: #f8fafc;
+      color: #0f172a;
+      border-color: #f8fafc;
+    }
+    .cv-btn-print:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    /* CV Document Container */
+    .cv-wrapper {
+      max-width: 960px;
+      margin: 2.5rem auto 4rem auto;
+      padding: 0 1.25rem;
+    }
+
+    .cv-sheet {
+      background: var(--paper);
+      border: 1px solid var(--paper-border);
+      border-radius: 8px;
+      padding: 3.5rem 3.5rem;
+      box-shadow: 0 10px 40px -15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header */
+    .sheet-header {
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 1.75rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .sheet-name {
+      font-family: var(--font-heading);
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #0f172a;
+      line-height: 1.1;
+      margin-bottom: 0.35rem;
+    }
+
+    .sheet-tagline {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: -0.01em;
+      margin-bottom: 0.35rem;
+    }
+
+    .sheet-credentials {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .sheet-contacts {
+      text-align: right;
+      font-size: 0.825rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+
+    .sheet-contacts a {
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .sheet-contacts a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.45rem;
+    }
+
+    /* Section Styles */
+    .sheet-section {
+      margin-bottom: 2rem;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .section-title span.sec-badge {
+      font-size: 0.7rem;
+      color: var(--text-light);
+      text-transform: none;
+      font-weight: 500;
+      letter-spacing: normal;
+    }
+
+    .summary-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      text-align: justify;
+    }
+
+    /* Experience & Projects items */
+    .exp-item {
+      margin-bottom: 1.35rem;
+      padding-bottom: 1.35rem;
+      border-bottom: 1px dashed #e2e8f0;
+    }
+    .exp-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.25rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .item-title {
+      font-size: 0.975rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .item-title a {
+      color: #0f172a;
+      text-decoration: none;
+    }
+    .item-title a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .item-role {
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+    }
+
+    .item-date {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-light);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .item-bullets {
+      list-style-type: square;
+      padding-left: 1.2rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 0.4rem;
+    }
+
+    .item-bullets li {
+      margin-bottom: 0.35rem;
+      line-height: 1.5;
+    }
+
+    .item-bullets li strong {
+      color: #1e293b;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+
+    .skill-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 0.85rem 1rem;
+    }
+
+    .skill-category {
+      font-size: 0.825rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .skill-items {
+      font-size: 0.825rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Projects Matrix */
+    .projects-matrix {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.85rem;
+    }
+
+    .matrix-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 0.85rem;
+      transition: border-color 0.2s;
+    }
+
+    .matrix-card:hover {
+      border-color: #cbd5e1;
+    }
+
+    .matrix-name {
+      font-weight: 700;
+      font-size: 0.875rem;
+      color: #0f172a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.25rem;
+    }
+
+    .matrix-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .matrix-link:hover {
+      text-decoration: underline;
+    }
+
+    .matrix-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 0.4rem;
+    }
+
+    .matrix-tags {
+      font-size: 0.725rem;
+      font-weight: 600;
+      color: var(--text-light);
+    }
+
+    /* Footer verification */
+    .sheet-footer {
+      border-top: 1px solid #cbd5e1;
+      padding-top: 1.25rem;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: var(--text-light);
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .footer-left {
+      font-weight: 500;
+    }
+
+    .footer-right a {
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 0.75rem;
+    }
+
+    /* Print Specific Styles */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-size: 11pt;
+      }
+
+      .cv-action-bar {
+        display: none !important;
+      }
+
+      .cv-wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+
+      .cv-sheet {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+      }
+
+      .sheet-header {
+        border-bottom: 2px solid #000000 !important;
+        padding-bottom: 12pt !important;
+        margin-bottom: 14pt !important;
+      }
+
+      .sheet-name {
+        font-size: 20pt !important;
+      }
+
+      .sheet-tagline {
+        color: #000000 !important;
+      }
+
+      .sheet-section {
+        page-break-inside: avoid;
+        margin-bottom: 14pt !important;
+      }
+
+      .section-title {
+        border-bottom: 1px solid #000000 !important;
+        padding-bottom: 2pt !important;
+        margin-bottom: 6pt !important;
+      }
+
+      .skill-card, .matrix-card {
+        border: 1px solid #cccccc !important;
+        background: transparent !important;
+      }
+
+      a {
+        text-decoration: none !important;
+        color: #000000 !important;
+      }
+
+      .matrix-link {
+        color: #000000 !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .cv-sheet {
+        padding: 2rem 1.25rem;
+      }
+
+      .sheet-contacts {
+        text-align: left;
+      }
+
+      .contact-item {
+        justify-content: flex-start;
+      }
+
+      .skills-grid, .projects-matrix {
+        grid-template-columns: 1fr;
+      }
+
+      .cv-action-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .cv-bar-actions {
+        justify-content: space-between;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Action Bar -->
+  <aside class="cv-action-bar">
+    <div class="cv-bar-left">
+      <a href="index.html" class="cv-bar-brand">&larr; Return to Portfolio</a>
+      <span class="cv-bar-badge">Curriculum Vitae</span>
+    </div>
+    <div class="cv-bar-actions">
+      <a href="assets/whatsapp-status-flyer.jpg" download="Ibrahim-Isah-Bawa-Flyer.jpg" class="cv-btn cv-btn-flyer" title="Download High-Res WhatsApp Status Marketing Flyer">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        WhatsApp Flyer
+      </a>
+      <button onclick="window.print()" class="cv-btn cv-btn-print" title="Print or save as clean PDF">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        Print / Save PDF
+      </button>
+      <a href="index.html" class="cv-btn cv-btn-back">Portfolio Home</a>
+    </div>
+  </aside>
+
+  <!-- Main CV Container -->
+  <main class="cv-wrapper">
+    <article class="cv-sheet">
+      
+      <!-- Header -->
+      <header class="sheet-header">
+        <div class="sheet-bio">
+          <h1 class="sheet-name">Ibrahim Isah Bawa</h1>
+          <p class="sheet-tagline">Computer Scientist Â· Full-Stack Software Engineer &amp; Enterprise Network Engineer</p>
+          <p class="sheet-credentials">Bachelor of Science (B.Sc.) in Computer Science Â· Federal University, Birnin Kebbi</p>
+        </div>
+
+        <div class="sheet-contacts">
+          <div class="contact-item">
+            <span>Email:</span>
+            <a href="mailto:isahibrahimbawakamba@gmail.com">isahibrahimbawakamba@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span>Phone:</span>
+            <a href="tel:+2349012002058">+234 901 200 2058</a>
+          </div>
+          <div class="contact-item">
+            <span>Location:</span>
+            <strong>Kebbi / Nigeria Â· Worldwide Available</strong>
+          </div>
+          <div class="contact-item">
+            <span>GitHub:</span>
+            <a href="https://github.com/itechue" target="_blank" rel="noopener">github.com/itechue</a>
+          </div>
+          <div class="contact-item">
+            <span>Platforms:</span>
+            <a href="https://sunglowpharmacy.com.ng" target="_blank" rel="noopener">sunglowpharmacy.com.ng</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Professional Summary -->
+      <section class="sheet-section">
+        <h2 class="section-title">
+          Professional Profile
+          <span class="sec-badge">Dual-Discipline Engineering</span>
+        </h2>
+        <p class="summary-text">
+          Results-driven Computer Scientist holding a Bachelor of Science (B.Sc.) in Computer Science from Federal University, Birnin Kebbi (graduated 2026). Unique engineering profile combining advanced full-stack software architecture with enterprise network infrastructure and physical systems engineering. Creator and maintainer of 10+ active production platforms, including the flagship Sunglow Pharmacy Management &amp; POS Web Platform (sunglowpharmacy.com.ng), Horizon Hope Clinic Platform, and TheGreatStack digital ecosystem. Hands-on network engineer specialized in Cisco Catalyst &amp; MikroTik routing/switching, high-availability Starlink Business satellite deployments, multi-VLAN isolation, 4K IP CCTV surveillance matrices, and structured fiber/copper cabling. Dedicated to high availability, sub-second failover, data integrity, and strict cybersecurity hygiene.
+        </p>
+      </section>
+
+      <!-- Core Competencies -->
+      <section class="sheet-section">
+        <h2 class="section-title">
+          Technical Competencies
+          <span class="sec-badge">Hardware to Cloud</span>
+        </h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-category">
+              <span>â—</span> Software &amp; Web Engineering
+            </div>
+            <div class="skill-items">
+              React.js, Node.js, Express, PHP / Laravel, TypeScript, Python, HTML5, Modern CSS, RESTful APIs, WebSockets, State Management, POS Barcode Integrations.
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-category">
+              <span>â—</span> Enterprise Network Engineering
+            </div>
+            <div class="skill-items">
+              Cisco Catalyst, MikroTik RouterOS, 802.1Q Multi-VLAN Segmentation, OSPF/BGP, Dual-WAN Failover &amp; Load Balancing, DHCP/DNS, Port Security, QoS Queuing.
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-category">
+              <span>â—</span> Satellite Telecom &amp; Surveillance Grids
+            </div>
+            <div class="skill-items">
+              Starlink Business High-Performance deployments, weather-sealed rooftop array mounts, PoE injectors, 4K IP CCTV cameras, NVR RAID-5 arrays, WireGuard VPN remote RTSP.
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-category">
+              <span>â—</span> Databases, DevOps &amp; Data Science
+            </div>
+            <div class="skill-items">
+              PostgreSQL, MySQL, SQLite, MongoDB, Linux Server Administration, Nginx reverse proxying, Git/GitHub CI/CD, Python (Pandas/NumPy), Audit Logging, RBAC &amp; TLS/SSL.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Professional Experience -->
+      <section class="sheet-section">
+        <h2 class="section-title">
+          Professional Experience
+          <span class="sec-badge">Software &amp; Infrastructure</span>
+        </h2>
+
+        <!-- Sunglow -->
+        <article class="exp-item">
+          <div class="item-header">
+            <h3 class="item-title">
+              <a href="https://sunglowpharmacy.com.ng" target="_blank" rel="noopener">Sunglow Pharmacy Management &amp; POS Platform</a>
+            </h3>
+            <span class="item-date">2024 â€” Present</span>
+          </div>
+          <div class="item-role">Lead Systems Architect &amp; Full-Stack Engineer Â· Live Production (sunglowpharmacy.com.ng)</div>
+          <ul class="item-bullets">
+            <li>Architected and deployed an end-to-end pharmaceutical ERP and retail Point of Sale system handling multi-clerk transactions, barcode scanning, and instant receipt generation.</li>
+            <li>Engineered an automated batch, lot, and expiry management subsystem preventing pharmaceutical dispensing errors with automated stock depletion alerts.</li>
+            <li>Designed high-security cryptographic audit logs and role-based access control (Admin, Pharmacist, Cashier) to prevent inventory leakage and unauthorized overrides.</li>
+            <li>Maintained zero unbudgeted downtime during peak operational hours with automated database backup routines.</li>
+          </ul>
+        </article>
+
+        <!-- Network Infra -->
+        <article class="exp-item">
+          <div class="item-header">
+            <h3 class="item-title">Enterprise Infrastructure &amp; Commercial Network Deployments</h3>
+            <span class="item-date">2023 â€” Present</span>
+          </div>
+          <div class="item-role">Enterprise Network Engineer &amp; Satellite Systems Specialist Â· Commercial Contracts</div>
+          <ul class="item-bullets">
+            <li><strong>Starlink Business Integration:</strong> Spearheaded rooftop high-performance Starlink satellite installations with surge-protected grounding, dual-WAN bonding with terrestrial fiber, achieving 99.98% connectivity uptime.</li>
+            <li><strong>Cisco &amp; MikroTik Switching Fabric:</strong> Engineered structured enterprise network backbones across 48+ ports with 802.1Q VLANs strictly isolating POS registers, IP security cameras, staff laptops, and public guest Wi-Fi.</li>
+            <li><strong>4K IP CCTV Security Grid:</strong> Deployed PoE-driven ultra-HD surveillance grids with centralized RAID-5 NVR storage and encrypted WireGuard VPN tunnels for secure off-site monitoring.</li>
+            <li><strong>Structured Cabling:</strong> Terminated, certified, and managed Cat6A and optical fiber runs across multi-floor business premises adhering to ANSI/TIA-568 standards.</li>
+          </ul>
+        </article>
+
+        <!-- TheGreatStack & Consulting -->
+        <article class="exp-item">
+          <div class="item-header">
+            <h3 class="item-title">
+              <a href="https://thegreatstack.com" target="_blank" rel="noopener">TheGreatStack Digital Ecosystem &amp; Institutional Portals</a>
+            </h3>
+            <span class="item-date">2022 â€” Present</span>
+          </div>
+          <div class="item-role">Lead Full-Stack Developer &amp; Systems Administrator Â· (thegreatstack.com)</div>
+          <ul class="item-bullets">
+            <li>Engineered multi-tenant digital ecosystem supporting dynamic subdomain routing, single sign-on (SSO), and unified dashboard monitoring across 8 specialized applications.</li>
+            <li>Deployed <strong>Horizon Hope Clinic Platform</strong> (horizonhope.thegreatstack.com) for patient medical scheduling, digital clinical triage, and automated physician appointment queues.</li>
+            <li>Engineered <strong>Sarki Mudi Academy ERP</strong> (sarkimudiacademykamba.com.ng) for digital academic grading, exam report generation, and student records for 1,200+ pupils.</li>
+            <li>Built <strong>NAWIA Zamfara Chapter Portal</strong> (nawiazamfarachapter.com.ng) delivering agricultural resource access and cooperative communication for 500+ verified women in agriculture.</li>
+            <li>Engineered <strong>Battlegrounds</strong> (battlegrounds.thegreatstack.com) and <strong>eGaming Hub</strong> (egaming.thegreatstack.com) handling real-time tournament brackets and high-concurrency match coordination.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- 10 Live Platforms Matrix -->
+      <section class="sheet-section">
+        <h2 class="section-title">
+          Live Deployed Platforms
+          <span class="sec-badge">10 Active Web Applications</span>
+        </h2>
+        <div class="projects-matrix">
+          <div class="matrix-card">
+            <div class="matrix-name">
+              <span>01. Sunglow Pharmacy POS</span>
+              <a href="https://sunglowpharmacy.com.ng" target="_blank" rel="noopener" class="matrix-link">sunglowpharmacy.com.ng &nearr;</a>
+            </div>
+            <p class="matrix-desc">Commercial POS, dispensary inventory, expiry triggers &amp; financial audit logs.</p>
+            <span class="matrix-tags">React Â· Node Â· MySQL Â· Barcode Engine</span>
+          </div>
+
+          <div class="matrix-card">
+            <div class="matrix-name">
+              <span>02. Horizon Hope Clinic</span>
+              <a href="https://horizonhope.thegreatstack.com" target="_blank" rel="noopener" class="matrix-link">horizonhope... &nearr;</a>
+            </div>
+            <p class="matrix-desc">Patient management, consultation queues, and clinical appointment bookings.</p>
+            <span class="matrix-tags">Healthcare ERP Â· Full-Stack Â· HIPAA-aware</span>
+          </div>
+
+          <div class="matrix-card">
+            <div class="matrix-name">
+              <span>03. TheGreatStack Ecosystem</span>
+              <a href="https://thegreatstack.com" target="_blank" rel="noopener" class="matrix-link">thegreatstack.com &nearr;</a>
+            </div>
+            <p class="matrix-desc">Central multi-tenant hub orchestrating subdomains, auth, and analytics.</p>
+            <span class="matrix-tags">Multi-Tenant Â· Nginx Â· Subdomain Routing</span>
+          </div>
+
+          <div class="matrix-card">
+            <div class="matrix-name">
+              <span>04. Sarki Mudi Academy</span>
+              <a href="https://sarkimudiacademykamba.com.ng" target="_blank" rel="noopener" class="matrix-link">sarkimudiacademy... &nearr;</a>
+            </div>
+            <p class="matrix-desc">Academic ERP managing 1,200+ student records, terms, and report cards.</p>
+            <span class="matrix-tags">Institutional Portal Â· PHP Â· SQL</span>
+          </div>
+
+          <div class="matrix-card">
+            <div class="matrix-name">
+              <span>05. NAWIA Zamfara Portal</span>
+              <a href="https://nawiazamfarachapter.com.ng" target="_blank" rel="noopener" class="matrix-link">nawiazamfara... &nearr;</a>
+            </div>
+            <p class="matrix-desc">Agricultural cooperative platform for 500+ female farmers in Zamfara State.</p>
+            <span class="matrix-tags">Community Portal Â· Resource Distribution</span>
+          </div>
+
+          <div class="matrix-card">
+            <div class="matrix-name">
+              <span>06. Battlegrounds Tournament</span>
+              <a href="https://battlegrounds.thegreatstack.com" target="_blank" rel="noopener" class="matrix-link">battlegrounds... &nearr;</a>
+            </div>
+            <p class="matrix-desc">Dynamic single/double elimination brackets with live match scoring.</p>
+            <span class="matrix-tags">Real-time Engine Â· WebSockets Â· Concurrency</span>
+          </div>
+
+          <div class="matrix-card">
+            <div class="matrix-name">
+              <span>07. eGaming Hub</span>
+              <a href="https://egaming.thegreatstack.com" target="_blank" rel="noopener" class="matrix-link">egaming... &nearr;</a>
+            </div>
+            <p class="matrix-desc">Esports community portal with team registrations and competitive stats.</p>
+            <span class="matrix-tags">Community Â· Leaderboards Â· Auth</span>
+          </div>
+
+          <div class="matrix-card">
+            <div class="matrix-name">
+              <span>08. Inventory Pro</span>
+              <a href="https://inventory.thegreatstack.com" target="_blank" rel="noopener" class="matrix-link">inventory... &nearr;</a>
+            </div>
+            <p class="matrix-desc">Enterprise stock auditing, minimum reorder thresholds &amp; supplier matrices.</p>
+            <span class="matrix-tags">ERP Â· Stock Management Â· Reporting</span>
+          </div>
+
+          <div class="matrix-card">
+            <div class="matrix-name">
+              <span>09. Workout Engine</span>
+              <a href="https://workout.thegreatstack.com" target="_blank" rel="noopener" class="matrix-link">workout... &nearr;</a>
+            </div>
+            <p class="matrix-desc">Interactive training planner with rep tracking and body metric telemetry.</p>
+            <span class="matrix-tags">PWA Â· Data Visualisation Â· Metrics</span>
+          </div>
+
+          <div class="matrix-card">
+            <div class="matrix-name">
+              <span>10. Hotel Booking Engine</span>
+              <a href="https://hotel.thegreatstack.com" target="_blank" rel="noopener" class="matrix-link">hotel... &nearr;</a>
+            </div>
+            <p class="matrix-desc">Hospitality suite with room inventory, reservation calendars &amp; billing.</p>
+            <span class="matrix-tags">Hospitality Â· Calendar Engine Â· Booking</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education & Credentials -->
+      <section class="sheet-section">
+        <h2 class="section-title">
+          Education &amp; Credentials
+          <span class="sec-badge">Formal Qualifications</span>
+        </h2>
+
+        <div class="exp-item">
+          <div class="item-header">
+            <h3 class="item-title">Bachelor of Science (B.Sc.) in Computer Science</h3>
+            <span class="item-date">Graduated 2026</span>
+          </div>
+          <div class="item-role">Federal University, Birnin Kebbi (FUBK) Â· Kebbi State, Nigeria</div>
+          <p class="summary-text" style="font-size: 0.85rem; margin-top: 0.35rem;">
+            Rigorous computing curriculum including Data Structures, Algorithms, Computer Networking, Cryptography &amp; Network Security, Operating Systems, Database Management Systems, Software Engineering Methodologies, and Distributed Systems.
+          </p>
+        </div>
+
+        <div class="exp-item">
+          <div class="item-header">
+            <h3 class="item-title">Enterprise Network Engineering &amp; Infrastructure</h3>
+            <span class="item-date">Hands-on Professional Competency</span>
+          </div>
+          <p class="summary-text" style="font-size: 0.85rem; margin-top: 0.35rem;">
+            Extensive field experience configuring Cisco Catalyst switches, MikroTik core routers, Starlink Business satellite transceivers, PoE NVR arrays, and structured cabling topologies.
+          </p>
+        </div>
+
+        <div class="exp-item">
+          <div class="item-header">
+            <h3 class="item-title">Data Science &amp; Systems Specialization</h3>
+            <span class="item-date">Technical Focus</span>
+          </div>
+          <p class="summary-text" style="font-size: 0.85rem; margin-top: 0.35rem;">
+            Analytical modeling, data pipelines, regression/classification, business intelligence visualization with Python, Pandas, and NumPy.
+          </p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="sheet-footer">
+        <div class="footer-left">
+          Ibrahim Isah Bawa Â· Verified B.Sc. Computer Science &amp; Infrastructure Engineer
+        </div>
+        <div class="footer-right">
+          <a href="mailto:isahibrahimbawakamba@gmail.com">isahibrahimbawakamba@gmail.com</a>
+          <a href="tel:+2349012002058">+234 901 200 2058</a>
+          <a href="https://sunglowpharmacy.com.ng" target="_blank" rel="noopener">sunglowpharmacy.com.ng</a>
+        </div>
+      </footer>
+
+    </article>
+  </main>
+
+</body>
+</html>
+
