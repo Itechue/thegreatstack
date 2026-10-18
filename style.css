@@ -526,16 +526,13 @@ textarea {
 }
 
 .hero-grid {
-  display: grid;
-  grid-template-columns: 1.25fr 0.95fr;
-  align-items: center;
-  gap: 64px;
+  display: block;
+  max-width: 880px;
 }
 
 @media (max-width: 992px) {
   .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 48px;
+    max-width: 100%;
   }
 }
 
@@ -578,7 +575,7 @@ textarea {
   font-size: clamp(1.05rem, 1.35vw, 1.25rem);
   line-height: 1.6;
   color: var(--ink-secondary);
-  max-width: 580px;
+  max-width: 720px;
   margin-bottom: 36px;
   font-weight: 400;
 }
@@ -635,83 +632,6 @@ textarea {
   }
 }
 
-/* Hero Portrait Frame */
-.hero-portrait-frame {
-  display: flex;
-  justify-content: center;
-}
-
-.portrait-card {
-  width: 100%;
-  max-width: 440px;
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius-md);
-  padding: 14px;
-  box-shadow: var(--shadow-card);
-}
-
-.portrait-image-wrapper {
-  width: 100%;
-  height: 480px;
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  background-color: var(--bg-subtle);
-}
-
-@media (max-width: 768px) {
-  .portrait-image-wrapper {
-    height: 380px;
-  }
-}
-
-.portrait-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  filter: contrast(1.02);
-}
-
-.portrait-caption {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 14px;
-  padding-top: 10px;
-  border-top: 1px solid var(--border-subtle);
-}
-
-.caption-name {
-  display: block;
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: var(--ink-primary);
-}
-
-.caption-degree {
-  display: block;
-  font-size: 0.76rem;
-  color: var(--ink-muted);
-}
-
-.caption-status {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.75rem;
-  font-family: var(--font-mono);
-  color: var(--accent);
-  font-weight: 500;
-}
-
-.status-pulse-dot {
-  width: 6px;
-  height: 6px;
-  background-color: var(--accent);
-  border-radius: 50%;
-}
 
 /* ─── About Section (Split Layout) ────────────────────── */
 .about-split-layout {
